@@ -1188,8 +1188,8 @@ const demonData = {
   },
   leviathan: {
     title: '利維坦 - 嫉妒之王',
-  desc: '利維坦生於深海之淵，目睹世界因信仰而秩序，卻因嫉妒無法掌控信仰，便鑄造「罪契幣」，以罪與契約建立屬於魔族的法則，他以交易取代祈禱，創造了契約文明魔族尊其為「深海仲裁者」。<br><br>' +
-       '「在深海前發誓，聽見的是誘惑，背叛者將永沉」',
+  desc: '利維坦生於深海之淵，目睹世界因信仰而秩序，卻因嫉妒無法掌控信仰，便鑄造「罪契幣」，以罪與契約建立屬於魔族的法則，他以交易取代祈禱，創造了契約文明，魔族尊其為「深海仲裁者」。<br><br>' +
+       '「深海為誓者作證，違約之魂，永墜深淵」',
     trait: '嫉妒、契約、靈魂',
     img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E6%83%A1%E9%AD%94%2F%E5%BF%8C%E5%A6%92.png?alt=media&token=37a563e2-a87d-4942-9056-7bcb85289f9d',
     alt: '利維坦 - 驕傲'
@@ -1198,7 +1198,7 @@ const demonData = {
     title: '撒旦 - 憤怒之王',
     desc: '撒旦誕生於地心的烈火脈中，那片永遠燃燒的深淵。從他的誕生之時起，便注定帶來毀滅與絕望。對他而言，正義從來不需要仁愛，只需無情的報復與血腥的勝利。<br><br>' +
     '他視世界為腐敗之地，所有神明和善良的存在皆為虛偽的假象，必須被摧毀。<br><br>' +
-	'「烈焰能燒盡一切，唯獨燒不盡不義。」',
+	'「烈焰可毀萬物，唯不義永存，焚之不盡。」',
     trait: '憤怒、復仇、毀滅',
     img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E6%83%A1%E9%AD%94%2F%E6%86%A4%E6%80%92.png?alt=media&token=aaaf7f6a-70a7-48e9-9f1d-f79ecaa9cde5',
     alt: '撒旦 - 憤怒'
@@ -1206,7 +1206,7 @@ const demonData = {
   celia: {
     title: '瑟莉雅 - 貪婪之王',
    desc: '誕生地獄深淵，那是一片永無止境的黑暗與火焰交織的地域。當地獄的深處，無數墮落靈魂的貪婪與渴望積聚成一股無形的力量時，瑟莉雅便在這股力量中誕生，成為貪婪的具象化。<br><br>' +
-    '「貪婪從不殺人，它只是靜靜等待，看誰先被慾望窒息」',
+    '「吾無須殺人，貪欲會使凡心自沉深淵，無聲而亡。',
     trait: '欲望、執著、貪婪',
     img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E6%83%A1%E9%AD%94%2F%E8%B2%AA%E5%A9%AA.png?alt=media&token=928c5512-2a68-4c2c-ab9a-2eb5415057fd',
     alt: '瑟莉雅 - 貪婪'
@@ -1215,7 +1215,7 @@ const demonData = {
     title: '伊蘭蕾潔 - 貪饕君主',
    desc: '無數墮落靈魂的飢餓與慾望積聚成一股強大的能量，這股能量凝結成伊蘭蕾潔的化身，成為貪欲與飢渴的具象化。<br><br>' +
     '她曾為魔王烹調「饕餮之宴」，以萬靈之魂為食，卻在嘗盡味道後陷入空虛。<br><br>' +
-    '「墮落亦能烹出美味，欲望與痛苦，總是相依。」',
+    '「越墮落，味越甜，欲與痛，永相隨。」。」',
     trait: '享樂、食慾、暴食',
     img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E6%83%A1%E9%AD%94%2F%E4%BC%8A%E8%98%AD.png?alt=media&token=c4525f36-e92b-42f3-925b-3f8b9f89c546',
     alt: '伊蘭蕾潔 - 貪饕'
@@ -1223,13 +1223,13 @@ const demonData = {
   belphegor: {
     title: '貝爾芬格 - 懶惰之王',
     desc: '誕生於地獄的深淵，那裡充滿了無盡的痛苦與無盡的爭鬥。與其他惡魔不同，貝爾芬格並不渴望力量、征服或報復。他見證了萬物的循環與變遷，並逐漸認識到一切奮鬥終將歸於虛無，無論是生死還是慾望，最終都會消散。<br><br>' +
-	'「沉睡者並非逃避，只是不願醒於破碎的夢。」',
+	'「沉眠非為逃避，只為不再醒於破碎之世。」',
     trait: '懶惰、停滯、消極',
     img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E6%83%A1%E9%AD%94%2F%E6%87%B6%E6%83%B0.png?alt=media&token=ffd63836-0dee-4ddb-a5b1-ebb12b4ad296',
     alt: '貝爾芬格 - 懶惰'
   },
   asmodeus: {
-    title: '阿斯莫德 - 欲之王',
+    title: '阿斯莫德 - 慾之王',
     desc: '夢與幻象的織者，他創造美與愛，卻也揭露人心最深的偽裝。 他認為慾望是靈魂的真言，而抑制慾望，是對自我的背叛。<br><br>' +
 	'「慾望不是罪，虛偽才是。」',
     trait: '誘惑、夢境、真實之鏡',
@@ -2311,4 +2311,5 @@ document.querySelectorAll('[data-section]').forEach(btn => {
     }
   });
 })();
+
 
