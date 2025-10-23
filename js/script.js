@@ -792,8 +792,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         school: {
             title: '麥格華茲',
-            desc: '麥格華茲學院座落於奧德倫王國。學院致力於培養年輕一代的魔法師，促進不同種族間的理解與合作，共同維護大陸的和平與繁榮。學院最獨特之處在於它的四個分院，每個分院代表著不同的價值觀與特質。<br><br>' +
-    '這裡讓學生能依照自身天賦與性格獲得最適合的指導與成長環境。透過這樣的分院制度，學生不僅能學習強大的魔法技能，更能培養出領導力、勇氣與智慧。',
+            desc: '麥格華茲學院座落於奧德倫王國。致力於培養年輕一代的魔法師，促進不同種族間的理解與合作，共同維護大陸的和平與繁榮。四個分院，每個分院代表著不同的價值觀與特質。 透過這樣的分院制度，學生不僅能學習強大的魔法技能，更能培養出領導力、勇氣與智慧。',
             notes: '特色：傳承奧秘、多元共融、卓越教育。',
             img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E7%8E%8B%E5%9C%8B%2FMG.png?alt=media&token=f94a5fc4-c7d0-4aa4-92dd-949bfcc18b23',
             alt: '麥格華茲 圖片'
@@ -2312,3 +2311,4 @@ document.querySelectorAll('[data-section]').forEach(btn => {
     }
   });
 })();
+
