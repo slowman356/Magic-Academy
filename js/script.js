@@ -2230,87 +2230,25 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 })();
 
-// === Section 切換 ===
 document.querySelectorAll('[data-section]').forEach(btn => {
   btn.addEventListener('click', (e) => {
+    e.preventDefault();
     const sec = btn.dataset.section;
-    if (sec) {
-      e.preventDefault();
-      showSection(sec);
+    if (typeof window.showSection === 'function') {
+      window.showSection(sec);
+    }
+
+    
+    if (window.matchMedia('(max-width: 800px)').matches) {
+      const mainNav = document.getElementById('mainNav');
+      const navToggle = document.querySelector('#mainNav .nav-toggle');
+      mainNav?.classList.remove('open');
+      navToggle?.setAttribute('aria-expanded', 'false');
     }
   });
 });
 
-(function () {
-  const mainNav   = document.getElementById('mainNav');
-  const mainMenu  = document.getElementById('mainMenu');
-  const navToggle = mainNav?.querySelector('.nav-toggle');
 
-
-  const isMobile = () => window.matchMedia('(max-width: 800px)').matches;
-
-
-  function openNav() {
-    mainNav.classList.add('open');
-    navToggle.setAttribute('aria-expanded', 'true');
-  }
-
- 
-  function closeNav() {
-    mainNav.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', 'false');
-  }
-
-
-  navToggle.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (mainNav.classList.contains('open')) closeNav();
-    else openNav();
-  });
-
-  
-  mainMenu.addEventListener('click', (e) => {
-    const btn = e.target.closest('.dropdown-toggle');
-    if (!btn) return; 
-
-    if (!isMobile()) return; 
-
-    e.preventDefault();
-    const li = btn.closest('li');
-    const willOpen = !li.classList.contains('open');
-
-
-    const parent = li.parentElement;
-    parent.querySelectorAll(':scope > li.open').forEach(sib => sib.classList.remove('open'));
-    parent.querySelectorAll(':scope > li .dropdown-toggle[aria-expanded="true"]').forEach(b => {
-      b.setAttribute('aria-expanded', 'false');
-    });
-
-    li.classList.toggle('open', willOpen); 
-    btn.setAttribute('aria-expanded', String(willOpen)); 
-  });
-
-
-  document.addEventListener('click', (e) => {
-    if (!isMobile()) return; 
-    if (!mainNav.contains(e.target)) closeNav(); 
-  });
-
-  // ESC按鍵關閉選單
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeNav(); 
-  });
-
-
-  let last = isMobile();
-  window.addEventListener('resize', () => {
-    const now = isMobile();
-    if (now !== last) {
-      closeNav(); 
-      last = now;
-    }
-  });
-})();
 
 
 
