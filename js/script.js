@@ -94,7 +94,7 @@ const divisionData = {
     '學生1': {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
       text: `
- 未註冊
+【未登記學生資料】
 【扮演者】Peggy
 `,
       twitch: 'https://www.twitch.tv/peggy_030'
@@ -1771,3 +1771,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
