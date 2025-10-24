@@ -1239,7 +1239,7 @@ const demonData = {
     title: '伊蘭蕾潔 - 貪饕君主',
     desc: '無數墮落靈魂的飢餓與慾望積聚成一股強大的能量，這股能量凝結成伊蘭蕾潔的化身，成為貪欲與飢渴的具象化。<br><br>' +
       '她曾為魔王烹調「饕餮之宴」，以萬靈之魂為食，卻在嘗盡味道後陷入空虛。<br><br>' +
-      '「越墮落，味越甜，欲與痛，永相隨。」。」',
+      '「越墮落，味越甜，欲與痛，永相隨。」',
     trait: '享樂、食慾、暴食',
     img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E6%83%A1%E9%AD%94%2F%E4%BC%8A%E8%98%AD.png?alt=media&token=c4525f36-e92b-42f3-925b-3f8b9f89c546',
     alt: '伊蘭蕾潔 - 貪饕'
@@ -1771,4 +1771,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
 
