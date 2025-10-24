@@ -94,7 +94,7 @@ const divisionData = {
     '學生1': {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
       text: `
-【未登記學生資料】
+ 未註冊
 【扮演者】Peggy
 `,
       twitch: 'https://www.twitch.tv/peggy_030'
@@ -709,16 +709,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  const joinBtn = document.getElementById('joinBtn');
-  const bgMusic = document.getElementById('bgMusic');
-  const musicToggle = document.getElementById('musicToggle');
-  const musicIcon = document.getElementById('musicIcon');
-  const musicLabel = document.getElementById('musicLabel');
+ const joinBtn     = document.getElementById('joinBtn');
+const bgMusic     = document.getElementById('bgMusic');
+const musicToggle = document.getElementById('musicToggle');
+const musicIcon   = document.getElementById('musicIcon');
+const musicLabel  = document.getElementById('musicLabel');
 
-  if (bgMusic) {
-    bgMusic.volume = 0.18;
-    bgMusic.loop = true;
-  }
+if (bgMusic) {
+  bgMusic.volume = 0.18;
+  bgMusic.loop = true;
+}
+
 
   function showSection(sectionId) {
     document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
@@ -765,43 +766,78 @@ document.addEventListener('DOMContentLoaded', () => {
   window.setActiveHouse = setActiveHouse;
 
 
-  if (joinBtn) {
-    joinBtn.addEventListener('click', () => {
-      showHomePage();
-      if (!bgMusic) return;
-      bgMusic.play().then(() => {
-        if (musicIcon) musicIcon.textContent = '⏸';
-        if (musicToggle) musicToggle.setAttribute('aria-pressed', 'true');
-        if (musicLabel) musicLabel.textContent = '音樂：播放中';
-      }).catch((err) => {
-        if (musicIcon) musicIcon.textContent = '▶';
-        if (musicToggle) musicToggle.setAttribute('aria-pressed', 'false');
-        if (musicLabel) musicLabel.textContent = '音樂';
-        console.warn('播放音樂遭到瀏覽器阻擋或錯誤：', err);
-      });
-    });
+  function setUI(isPlaying) {
+  if (musicIcon) musicIcon.textContent = isPlaying ? '⏸' : '▶';
+  if (musicToggle) musicToggle.setAttribute('aria-pressed', String(isPlaying));
+  if (musicLabel) musicLabel.textContent = isPlaying ? '音樂：播放中' : '背景音樂（暫停）';
+}
+
+if (bgMusic) {
+  bgMusic.addEventListener('play',   () => setUI(true));
+  bgMusic.addEventListener('playing',() => setUI(true));
+  bgMusic.addEventListener('pause',  () => setUI(false));
+  bgMusic.addEventListener('ended',  () => setUI(false));
+  bgMusic.addEventListener('error',  () => setUI(false));
+  bgMusic.addEventListener('stalled',() => setUI(false));
+  bgMusic.addEventListener('waiting',() => setUI(true)); 
+}
+
+
+let opLock = false;
+
+
+async function safePlay() {
+  if (!bgMusic) return;
+  if (opLock) return;          
+  try {
+    
+    const p = bgMusic.play();
+    if (p && typeof p.then === 'function') {
+      await p;                 
+    }
+    
+  } catch (err) {
+   
+    console.warn('播放音樂遭阻擋或錯誤：', err);
+    setUI(false);
+  } finally {
+    opLock = false;
   }
+}
 
 
-  if (musicToggle && bgMusic) {
-    musicToggle.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (bgMusic.paused) {
-        bgMusic.play().then(() => {
-          if (musicIcon) musicIcon.textContent = '⏸';
-          musicToggle.setAttribute('aria-pressed', 'true');
-          if (musicLabel) musicLabel.textContent = '音樂：播放中';
-        }).catch(err => {
-          console.warn('播放音樂失敗：', err);
-        });
-      } else {
-        bgMusic.pause();
-        if (musicIcon) musicIcon.textContent = '▶';
-        musicToggle.setAttribute('aria-pressed', 'false');
-        if (musicLabel) musicLabel.textContent = '背景音樂（暫停）';
+if (joinBtn) {
+  joinBtn.addEventListener('click', async () => {
+    showHomePage();
+    if (!bgMusic) return;
+    await safePlay();
+  });
+}
+
+// --- 切換播放/暫停 ---
+if (musicToggle) {
+  musicToggle.addEventListener('click', async (e) => {
+    e.preventDefault();
+    if (!bgMusic || opLock) return;
+
+  
+    if (!bgMusic.paused) {
+      
+      opLock = true;
+      try {
+        bgMusic.pause();  
+      } finally {
+       
+        setTimeout(() => { opLock = false; }, 120);
       }
-    });
-  }
+    } else {
+      await safePlay();   
+    }
+  });
+}
+
+
+setUI(false);
 
 
   document.querySelectorAll('nav a[data-section]').forEach(link => {
@@ -1548,7 +1584,7 @@ const teacherData = {
       text: `
 【角色】米納斯·薇婭
 【職位】霍爾芬多學院主任
-【宗旨】忠誠是力量，榮譽是信仰。守護不是義務，而是誓言為家園。我們如雄鷹展翼，守望天空，永不退卻。
+【宗旨】我是霍爾芬多分院的主任。忠誠是力量，榮譽是信仰。守護不是義務，而是誓言為家園、為夥伴、為世界的安寧。我們如雄鷹展翼，守望天空，永不退卻。
 【擅長】防禦與騎士魔法
 【扮演者】巴哥
 `,
@@ -1559,7 +1595,7 @@ const teacherData = {
       text: `
 【角色】大衛．羅曼
 【職位】坎普費爾班主任
-【宗旨】力量，是意志與磨練的結晶。唯有讓身體與心靈都承受試煉，力量才會回應並臣服於你。
+【宗旨】我是坎普費爾分院的主任。力量，是意志與磨練的結晶。唯有讓身體與心靈都承受試煉，力量才會回應並臣服於你。正如我們的徽章青蛇，沉著、致命、無懼挑戰。我們不逃避痛苦，我們征服它。
 【扮演者】早八都有到
 `,
       twitch: ''
@@ -1569,7 +1605,7 @@ const teacherData = {
       text: `
 【角色】優莉安娜・貝娜
 【職位】特威克羅學院主任
-【宗旨】以智慧為刃、以知識為燈，追尋深藏於世界背後的真理。只要答案仍被遮蔽，我們的探索便不會停止。
+【宗旨】我是特威克羅分院的主任。我們以智慧為刃、以知識為燈，追尋深藏於世界背後的真理。世人畏懼未知，而我們選擇直視並解讀它。只要答案仍被遮蔽，我們的探索便不會停止。
 【扮演者】-U-U-
 `,
       twitch: ''
@@ -1579,7 +1615,7 @@ const teacherData = {
       text: `
 【角色】西追・普萊特
 【職位】赫文帕夫學院主任
-【宗旨】和諧是力量，平衡是道路。魔法能療癒世界，如蓮綻放，以溫柔止息混亂。
+【宗旨】我是赫文帕夫分院的主任。和諧是力量，平衡是道路。魔法能療癒世界，如蓮綻放，以溫柔止息混亂。
 【扮演者】緩而
 
 `,
@@ -1771,6 +1807,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-
-
-
