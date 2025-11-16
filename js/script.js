@@ -21,7 +21,7 @@ function buildTwitchAnchor(href, disabled) {
     
     if (disabled) {
         a.setAttribute('aria-disabled', 'true');
-        a.addEventListener('click', (e) => e.preventDefault());  // 禁用按钮的点击
+        a.addEventListener('click', (e) => e.preventDefault());  
     } else {
         a.href = href;
         a.target = '_blank';
@@ -494,8 +494,8 @@ const divisionData = {
 【性別】女
 【年齡】18歲
 【種族】人類 
-【個性】喜愛小動物，但不喜歡蟲子，喜好品嘗各式美食，尤其喜歡甜食。
-【簡介】族是一個歷史悠久的化獸師世家，家族世世代代祭祀信奉著九尾狐神
+【個性】喜歡和平、不喜歡戰爭與殺戮，溫柔、開朗、對世界充滿好奇心。
+【簡介】對「刀與劍」有強烈的排斥感、連碰都不願意碰，沒有人知道為什麼、她也從來不跟其他人說
 【扮演者】涅波絲姬
 `,
       twitch: ''
@@ -507,8 +507,8 @@ const divisionData = {
 【性別】女
 【年齡】18歲
 【種族】人類 
-【個性】喜歡和平、不喜歡戰爭與殺戮，溫柔、開朗、對世界充滿好奇心。
-【簡介】對「刀與劍」有強烈的排斥感、連碰都不願意碰...沒有人知道為什麼、她也從來不跟其他人說....
+【個性】喜愛小動物，但不喜歡蟲子，喜好品嘗各式美食，尤其喜歡甜食。
+【簡介】家族是一個歷史悠久的化獸師世家，家族世世代代祭祀信奉著九尾狐神
 【扮演者】阡狐
 `,
       twitch: 'https://www.twitch.tv/senkitsune_huni'
@@ -1100,13 +1100,13 @@ setUI(false);
     });
   });
 });
-// JavaScript 用來顯示魔鏡日報頁面
+
 document.querySelector('[data-section="newspaper"]').addEventListener('click', function() {
-  // 隱藏其他頁面
+  
   const sections = document.querySelectorAll('.content-section');
   sections.forEach(section => section.style.display = 'none');
   
-  // 顯示魔鏡日報頁面
+  
   document.getElementById('newspaper').style.display = 'block';
 });
 
@@ -2178,3 +2178,23 @@ document.addEventListener("DOMContentLoaded", function () {
   refreshAllProgressBarsFromDataset();
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const scoreLink = document.querySelector('.score-link');
+  const scoreboardSection = document.getElementById('scoreboard');
+
+  
+  scoreboardSection.style.display = 'none';
+
+  
+  scoreLink.addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    
+    if (scoreboardSection.style.display === 'none') {
+      scoreboardSection.style.display = 'block'; 
+    } else {
+      scoreboardSection.style.display = 'none';  
+    }
+  });
+});
