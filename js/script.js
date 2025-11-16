@@ -1639,18 +1639,6 @@ const teacherData = {
       twitch: 'https://www.twitch.tv/cheese_prime_ham'
     },
 	
-	 '瑟倫・莉菈': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/teacher%2F%E7%91%9F%E5%80%AB%E3%83%BB%E8%8E%89%E8%8F%88.png?alt=media&token=65c27096-e0d3-4eb2-bf32-4532f41a7488',
-      text: `
-【角色】瑟倫・莉菈（Seren Lyra）
-【種族】半精靈 
-【年齡】外表約30歲 （實際年齡約300多歲） 
-【個性】喜歡與學生互動，會耐心解答問題，像朋友一樣聽學生訴說
-【能力】閃電系魔法
-【扮演者】 筱玥 
-  `,
-      twitch: 'https://www.twitch.tv/cheese_prime_ham'
-    },
 	
     '優莉安娜・貝娜': {
       name: '優莉安娜・貝娜',
@@ -1757,21 +1745,9 @@ const teacherData = {
       【扮演者】雅達諾 
     `,
     twitch: 'https://www.twitch.tv/adanono'
+	 }
   },
-    '社團導師二': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E8%80%81%E5%B8%AB%2FFloa%20Fenrir.png?alt=media&token=02e749ce-73be-443f-b9b2-2dc6da344892',
-      text: `
-【角色】芙洛‧芬里爾(Floa Fenrir)
-【種族】狼人
-【年齡】28歲
-【個性】表面沉靜、禮貌，真誠傾聽
-【能力】魔藥學
-【扮演者】七七
-
-    `,
-      twitch: 'https://www.twitch.tv/chichi5118'
-    }
-  },
+   
   
   
 
@@ -1863,13 +1839,13 @@ const teacherData = {
       twitch: 'https://www.twitch.tv/hanfeicat'
     },
 	
-	 '嚮導': {
+	 '史萊姆王': {
       img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/teacher%2F%E9%98%BF%E8%8C%B2%E9%BB%98%E7%89%B9.png?alt=media&token=aef7663c-03ec-4777-9b20-61d2276ee058',
       text: `
 【角色】史萊姆王・阿茲默特（Azmert, the Eternal Ooze）
 【種族】精靈惡魔混種
 【年齡】10000歲（早已忘記自己的誕生日）
-【職位】嚮導
+【職位】史萊姆王
 【個性】健忘、活潑、健談、永遠保持着玩笑般的口吻
 【能力】全屬性
 【扮演者】鳥鳥兒
@@ -1877,7 +1853,7 @@ const teacherData = {
       twitch: 'https://www.twitch.tv/mrbird2000'
     },
 	
-	 '學院守護獸': {
+	 '工讀生': {
       img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/teacher%2F%E8%8C%B1%E9%BA%97%E8%91%89.png?alt=media&token=97142a89-f4fe-486a-b9cb-a538005ccdf1',
       text: `
 【角色】茱麗葉・咕咕
