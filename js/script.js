@@ -14,53 +14,55 @@
   window.escapeHtml = escapeHtml;
 
  
-  function buildTwitchAnchor(href, disabled) {
+function buildTwitchAnchor(href, disabled) {
     const a = document.createElement('a');
     a.className = 'twitch-btn';
     a.setAttribute('role', 'button');
-
+    
     if (disabled) {
-      a.setAttribute('aria-disabled', 'true');
-      a.textContent = 'Twitch（未提供）';
+        a.setAttribute('aria-disabled', 'true');
+        a.addEventListener('click', (e) => e.preventDefault());  // 禁用按钮的点击
     } else {
-      a.href = href;
-      a.target = '_blank';
-      a.rel = 'noopener noreferrer';
-      a.innerHTML = `
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="width:18px;height:18px;vertical-align:-3px;margin-right:6px">
-          <path fill="currentColor" d="M4 3h16v10.5L16 17H12l-2.5 2.5H8V17H4V3zm14 2H6v9h3v2l2-2h4l3-3.5V5zM14 7h2v4h-2V7zm-5 0h2v4H9V7z"/>
-        </svg>
-        前往 Twitch
-      `;
+        a.href = href;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.innerHTML = `
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="width:24px;height:24px;">
+                <path fill="currentColor" d="M4 3h16v10.5L16 17H12l-2.5 2.5H8V17H4V3zm14 2H6v9h3v2l2-2h4l3-3.5V5zM14 7h2v4h-2V7zm-5 0h2v4H9V7z"/>
+            </svg>
+        `;
     }
     return a;
-  }
+}
 
-  function renderTwitchButton(url) {
+function renderTwitchButton(url) {
     const divisionText = document.getElementById('division-text');
     if (!divisionText) return;
 
     let actions = document.getElementById('division-actions');
     if (!actions) {
-      const wrapper = document.createElement('div');
-      wrapper.id = 'division-actions';
-      divisionText.after(wrapper);
-      actions = wrapper;
+        const wrapper = document.createElement('div');
+        wrapper.id = 'division-actions';
+        divisionText.after(wrapper);
+        actions = wrapper;
     }
     actions.innerHTML = '';
 
     if (!url) {
-      const disabledBtn = buildTwitchAnchor('#', true);
-      disabledBtn.title = '尚未提供 Twitch 連結';
-      actions.appendChild(disabledBtn);
-      return;
+        const disabledBtn = buildTwitchAnchor('#', true);
+        actions.appendChild(disabledBtn);
+        return;
     }
 
     const href = /^https?:\/\//i.test(url) ? url : `https://${url}`;
     const btn = buildTwitchAnchor(href, false);
     actions.appendChild(btn);
-  }
-  window.renderTwitchButton = renderTwitchButton;
+}
+
+window.renderTwitchButton = renderTwitchButton;
+
+
+
 })();
 
 /* =========================================================
@@ -242,7 +244,7 @@ const divisionData = {
 【年齡】18歲 
 【種族】野獸族 
 【個性】有些笨拙、容易給人呆呆的感覺，但其實那都是因為她故意不想理人時會裝出的樣子。
-【簡介】出生在高貴的吸血蝙蝠世家，對她的家庭來說，血統的純正是最為重要的一件事情，從小到大她被灌輸著「妳必須要達到這個高度」的教育。
+【簡介】血統的純正是最為重要的一件事情，從小到大她被灌輸著「妳必須要達到這個高度」的教育。
 【扮演者】襪子わつ
 `,
       twitch: 'https://www.twitch.tv/zerowatu'
@@ -257,7 +259,7 @@ const divisionData = {
 【年齡】18歲 
 【種族】魔族 
 【個性】開朗、直率；喜歡打破尷尬氣氛，也喜歡挑戰權威
-【簡介】誕生為半血魔族，然而這樣的混血身分在魔族與人類之間皆被視為「不潔的存在」，她自幼飽受排斥與歧視。
+【簡介】誕生為半血魔族，混血身分在魔族與人類之間皆被視為「不潔的存在」，她自幼飽受排斥與歧視。
 【扮演者】老婆
 `,
       twitch: 'hhttps://www.twitch.tv/s73225200'
@@ -415,7 +417,7 @@ const divisionData = {
 【年齡】18歲 
 【種族】人類 
 【個性】溫柔、善解人意、容易讓人感到放鬆，偶爾天然呆犯蠢。
-【簡介】天然呆，經常忘東忘西，偶爾把魔法草藥當成糖果吃，或在做咒語時嘴裡嘟囔出完全沒有關係的詞，但她的微笑總是能融化周圍人的緊張和不安。
+【簡介】天然呆，經常忘東忘西，偶爾把魔法草藥當成糖果吃
 【扮演者】Misuzu
 `,
       twitch: 'https://www.twitch.tv/isuzumaccha'
@@ -493,7 +495,7 @@ const divisionData = {
 【年齡】18歲
 【種族】人類 
 【個性】喜愛小動物，但不喜歡蟲子，喜好品嘗各式美食，尤其喜歡甜食。
-【簡介】族是一個歷史悠久的化獸師世家，雖然不是宮廷權貴但也是名門望族。家族世世代代祭祀信奉著九尾狐神——象徵豐饒及與自然共生的神獸
+【簡介】族是一個歷史悠久的化獸師世家，家族世世代代祭祀信奉著九尾狐神
 【扮演者】涅波絲姬
 `,
       twitch: ''
@@ -633,12 +635,12 @@ const divisionData = {
     '學生6': {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
       text: `
-【角色】莉斯法古曼
+【角色】莉斯法.古曼
 【性別】女
 【年齡】18歲
 【種族】人類 
 【個性】樂觀活潑又調皮，內心心思細膩也很善良，樂於助人。
-【簡介】家境雖然不算富裕卻也過得還算滋潤，從小被父母捧在手心長大，有些被寵壞的調皮，但是內心還是善良的
+【簡介】從小被父母捧在手心長大，有些被寵壞的調皮，但是內心還是善良的
 【扮演者】德海伊拉
 `,
       twitch: ''
@@ -690,7 +692,7 @@ const divisionData = {
 【年齡】18歲
 【種族】人類
 【個性】外向、樂天、嘴甜、行動派、愛管閒事但心地超好
-【簡介】對她的爸媽來說，執法是榮譽，魔法卻被視為危險的幻想，魔法太變幻無常了。但凱特琳認為，在這個有魔族的世界，光成為警察是不夠的，肯定要學會魔法才能更有信心對抗這一切
+【簡介】凱特琳認為，在這個有魔族的世界，光成為警察是不夠的，肯定要學會魔法才能更有信心對抗這一切
 【扮演者】ㄚ布丁丁
 `,
       twitch: 'https://www.twitch.tv/hipudding1223'
