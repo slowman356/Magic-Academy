@@ -31,22 +31,8 @@
 
   <ul id="mainMenu" role="menu">
     <li><a href="#" data-section="home" role="menuitem">首頁</a></li>
-
-    <!--學院總覽 -->
-    <li class="menu-has-dropdown" role="none">
-      <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="academyDropdown" role="menuitem">
-        學院總覽
-      </button>
-      <ul id="academyDropdown" class="dropdown" role="menu" aria-label="學院總覽">
-        <li role="none"><a href="#" data-section="academies" role="menuitem">學院介紹</a></li>
-        <li role="none"><a href="#" data-section="teachers" role="menuitem">學院師團</a></li>
-        <li role="none"><a href="#" id="studentIntroNav" role="menuitem">學生介紹</a></li>
-        <li role="none"><a href="#" data-section="rulesPage" role="menuitem">校規</a></li>
-      </ul>
-    </li>
-
-    <!-- 世界觀 -->
-    <li class="menu-has-dropdown" role="none">
+	
+	<li class="menu-has-dropdown" role="none">
       <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="worldDropdown" role="menuitem">
         世界觀
       </button>
@@ -59,11 +45,62 @@
       </ul>
     </li>
 
-    <li><a href="#" data-section="sever" role="menuitem">伺服器規範</a></li>
-    <li><a href="#" data-section="map" role="menuitem">地圖</a></li>
-    <li><a href="#" data-section="team" role="menuitem">製作團隊</a></li>
+    <li class="menu-has-dropdown" role="none">
+  <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="academyDropdown" role="menuitem">
+    學院總覽
+  </button>
+  <ul id="academyDropdown" class="dropdown" role="menu" aria-label="學院總覽">
+    <li role="none"><a href="#" data-section="academies" role="menuitem">學院介紹</a></li>
+    <li role="none"><a href="#" data-section="teachers" role="menuitem">學院師團</a></li>
+    <li role="none"><a href="#" id="studentIntroNav" role="menuitem">學生介紹</a></li>
+	<li role="none"><a href="#" data-section="scoreboard" role="menuitem">學院分數</a></li> 
+    <li role="none"><a href="#" data-section="rulesPage" role="menuitem">校規</a></li>
   </ul>
+</li>
+
+
+<li><a href="#" data-section="map" role="menuitem">地圖</a></li>
+<li><a href="#" data-section="newspaper" role="menuitem">魔境日報</a></li>
+
+<li class="menu-has-dropdown" role="none">
+  <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="serverDropdown" role="menuitem">
+    伺服器資訊
+  </button>
+  <ul id="serverDropdown" class="dropdown" role="menu" aria-label="伺服器資訊">
+    <li role="none"><a href="#" data-section="sever" role="menuitem">規範</a></li>
+    <li role="none"><a href="#" data-section="team" role="menuitem">製作團隊</a></li>
+  </ul>
+</li>
+
 </nav>
+
+
+</nav>
+
+<section id="newspaper" class="content-section" style="display: none;">
+  <h2>魔鏡日報</h2>
+  <p class="update-text">每日更新報導</p>
+   <p class="magic-effect-text">點擊使用魔法放大！</p>
+
+  <div class="news-container">
+    <!-- 您可以放置更多圖片 -->
+    <div class="news-item">
+      <div class="news-image">
+        <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E5%A0%B1%E7%B4%993.gif?alt=media&token=5f32ea71-1961-424b-9266-c947f5bcb2b7" target="_blank">
+          <!-- 使用 GIF 連結 -->
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E5%A0%B1%E7%B4%993.gif?alt=media&token=5f32ea71-1961-424b-9266-c947f5bcb2b7" alt="魔鏡日報圖片" class="clickable-image">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
 
 
 
@@ -97,11 +134,10 @@
     </div>
   </div>
 
-  <a href="#" id="musicToggle" class="music-toggle" aria-pressed="false" title="背景音樂播放/暫停">
-    <span id="musicIcon">▶</span>
-    <span class="music-status" id="musicLabel">背景音樂</span>
-  </a>
-
+ <a href="#" id="musicToggle" class="music-toggle" aria-pressed="false" title="背景音樂播放/暫停">
+  <span id="musicIcon">▶</span>
+  <span class="music-status" id="musicLabel">背景音樂</span>
+</a>
 
 <div id="home" class="section">
   <h1 style="text-align:center; margin-bottom: 8px; color: white;">大陸背景</h1>
@@ -138,12 +174,19 @@
 </div>
 
 
+
+
+
   <!-- 學生介紹頁 -->
   <div id="students" class="section">
     <h1>學生</h1>
+	<!-- 學院分數鏈接 -->
+<p>
+  <a href="#" data-section="scoreboard" role="menuitem" class="score-link">查看學院分數</a>
+</p>
+
     <p style="max-width:800px;margin:auto;color:#dcd0a1;">
-      點擊查看該學生的介紹(ESC關閉)
-      註冊完畢後 資料會進行更新
+      點擊查看該學生的介紹
     </p>
     <div id="studentSubNav">
       <a data-house="holfindo" class="active">第一頁</a>
@@ -158,84 +201,84 @@
         <div class="student-card" data-student="學生1" data-house="holfindo">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生1頭貼" />
           <div class="student-info">
-            <h3>Peggy</h3>
+            <h3>迪諾</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生2" data-house="holfindo">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生2頭貼" />
           <div class="student-info">
-            <h3>丹丹丹尼</h3>
+            <h3>露亞・艾莉娜</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生3" data-house="holfindo">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生3頭貼" />
           <div class="student-info">
-            <h3>水天酋長</h3>
+            <h3>刻爾柏洛斯・吉娃娃</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生4" data-house="holfindo">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生4頭貼" />
           <div class="student-info">
-            <h3>老婆</h3>
+            <h3>丹佛勒斯・雷焰</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生5" data-house="holfindo">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生5頭貼" />
           <div class="student-info">
-            <h3>鋪許</h3>
+            <h3>薇薇安・胡珀</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生6" data-house="holfindo">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生6頭貼" />
           <div class="student-info">
-            <h3>RVin</h3>
+            <h3>艾莉亞・瑟蕾絲</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生7" data-house="holfindo">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生7頭貼" />
           <div class="student-info">
-            <h3>柳丁丁丁</h3>
+            <h3>李秋生</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生8" data-house="holfindo">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生8頭貼" />
           <div class="student-info">
-            <h3>流傳派</h3>
+            <h3>肯尼・葛林伍夫</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生9" data-house="holfindo">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生9頭貼" />
           <div class="student-info">
-            <h3>ㄚ布丁丁</h3>
+            <h3>波波魯・坡伊</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生10" data-house="holfindo">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生10頭貼" />
           <div class="student-info">
-            <h3>俊俏王</h3>
+            <h3>珂練</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生11" data-house="holfindo">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生11頭貼" />
           <div class="student-info">
-            <h3>Ume</h3>
+            <h3>哈泊</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生12" data-house="holfindo">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生12頭貼" />
           <div class="student-info">
-            <h3>可口奶凍</h3>
+            <h3>瓦娃・希德拉</h3>
             <p>未註冊。</p>
           </div>
         </div>
@@ -248,7 +291,7 @@
         <div class="student-card" data-student="學生1" data-house="skmalin">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生1頭貼" />
           <div class="student-info">
-            <h3>羽落</h3>
+            <h3>薩芮拉</h3>
             <p>未註冊。</p>
           </div>
         </div>
@@ -256,77 +299,77 @@
         <div class="student-card" data-student="學生2" data-house="skmalin">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生2頭貼" />
           <div class="student-info">
-            <h3>永發</h3>
+            <h3>水仙・穆爾西</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生3" data-house="skmalin">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生3頭貼" />
           <div class="student-info">
-            <h3>五十鈴抹茶糰子</h3>
+            <h3>多比</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生4" data-house="skmalin">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生4頭貼" />
           <div class="student-info">
-            <h3>貓白</h3>
+            <h3>舒洛里恩・灰花</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生5" data-house="skmalin">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生5頭貼" />
           <div class="student-info">
-            <h3>唯唯兒</h3>
+            <h3>莎咪・理貢</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生6" data-house="skmalin">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生6頭貼" />
           <div class="student-info">
-            <h3>襪子わつ</h3>
+            <h3>梅林・海德羅斯</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生7" data-house="skmalin">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生7頭貼" />
           <div class="student-info">
-            <h3>裘嗨嗨</h3>
+            <h3>來奧娜</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生8" data-house="skmalin">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生8頭貼" />
           <div class="student-info">
-            <h3>歐練</h3>
+            <h3>安柏・史塔克</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生9" data-house="skmalin">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生9頭貼" />
           <div class="student-info">
-            <h3>振宇</h3>
+            <h3>瑪莉蓮・吱吱</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生10" data-house="skmalin">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生10頭貼" />
           <div class="student-info">
-            <h3>諾櫻</h3>
+            <h3>文嘉德 奈洛斯</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生11" data-house="skmalin">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生11頭貼" />
           <div class="student-info">
-            <h3>梅林</h3>
+            <h3>貓娜・露西婭</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生12" data-house="skmalin">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生12頭貼" />
           <div class="student-info">
-            <h3>阡狐</h3>
+            <h3>派崔克・雷文沙德</h3>
             <p>未註冊。</p>
           </div>
         </div>
@@ -339,7 +382,7 @@
         <div class="student-card" data-student="學生1" data-house="rowenpaf">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生1頭貼" />
           <div class="student-info">
-            <h3>易閒</h3>
+            <h3>依夏・拉芙蕾絲</h3>
             <p>未註冊。</p>
           </div>
         </div>
@@ -347,77 +390,77 @@
         <div class="student-card" data-student="學生2" data-house="rowenpaf">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生2頭貼" />
           <div class="student-info">
-            <h3>夜某</h3>
+            <h3>伊森・喬丹</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生3" data-house="rowenpaf">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生3頭貼" />
           <div class="student-info">
-            <h3>嘎旋</h3>
+            <h3>凍・維里爾</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生4" data-house="rowenpaf">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生4頭貼" />
           <div class="student-info">
-            <h3>Misuzu</h3>
+            <h3>鈴・艾蕾諾</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生5" data-house="rowenpaf">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生5頭貼" />
           <div class="student-info">
-            <h3>小丞丞</h3>
+            <h3>馬可・菠蘿</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生6" data-house="rowenpaf">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生6頭貼" />
           <div class="student-info">
-            <h3>秋澤恭介</h3>
+            <h3>賽勒斯・格倫</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生7" data-house="rowenpaf">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生7頭貼" />
           <div class="student-info">
-            <h3>源犬太</h3>
+            <h3>涅比亞・涅波絲姬</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生8" data-house="rowenpaf">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生8頭貼" />
           <div class="student-info">
-            <h3>Shoyu</h3>
+            <h3>森薇爾・雷納德</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生9" data-house="rowenpaf">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生9頭貼" />
           <div class="student-info">
-            <h3>猫羽うみ</h3>
+            <h3>菲尼・克斯</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生10" data-house="rowenpaf">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生10頭貼" />
           <div class="student-info">
-            <h3>沐沐菟栮</h3>
+            <h3>威斯・塔克</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生11" data-house="rowenpaf">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生11頭貼" />
           <div class="student-info">
-            <h3>伊德海拉</h3>
+            <h3>達克・鴨鴨</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生12" data-house="rowenpaf">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生12頭貼" />
           <div class="student-info">
-            <h3>馬魯</h3>
+            <h3>米拉・艾芙琳</h3>
             <p>未註冊。</p>
           </div>
         </div>
@@ -430,7 +473,7 @@
         <div class="student-card" data-student="學生1" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生1頭貼" />
           <div class="student-info">
-            <h3>罐罐</h3>
+            <h3>妮芙・羅萊特</h3>
             <p>未註冊。</p>
           </div>
         </div>
@@ -438,63 +481,63 @@
         <div class="student-card" data-student="學生2" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生2頭貼" />
           <div class="student-info">
-            <h3>我大歪頭</h3>
+            <h3>尼諾・普普卡</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生3" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生3頭貼" />
           <div class="student-info">
-            <h3>轉蛋姬</h3>
+            <h3>踢卡・赫布斯特</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生4" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生4頭貼" />
           <div class="student-info">
-            <h3>鴨鴨二</h3>
+            <h3>哥倫比婭・沐玥</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生5" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生5頭貼" />
           <div class="student-info">
-            <h3>補路</h3>
+            <h3>萊恩・休斯</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生6" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生6頭貼" />
           <div class="student-info">
-            <h3>魯波</h3>
+            <h3>莉斯・法古曼</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生7" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生7頭貼" />
           <div class="student-info">
-            <h3>來希 Lupo</h3>
+            <h3>栗里・咪烏斯</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生8" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生8頭貼" />
           <div class="student-info">
-            <h3>踏雪嗚哇</h3>
+            <h3>艾涅爾・平安</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生9" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生9頭貼" />
           <div class="student-info">
-            <h3>捏波絲姬</h3>
+            <h3>伊默・哞斯塔</h3>
             <p>未註冊。</p>
           </div>
         </div>
         <div class="student-card" data-student="學生10" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生10頭貼" />
           <div class="student-info">
-            <h3>踢踢</h3>
+            <h3>凱特琳・汀斯莉</h3>
             <p>未註冊。</p>
           </div>
         </div>
@@ -649,7 +692,7 @@
   </div>
 </div>
 
-<!-- 坎普費爾 班主任 -->
+<!-- 斯卡瑪林 班主任 -->
 <div class="teacher-card" data-group="director" data-teacher="大衛．羅曼"
   style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px; background: rgba(246,219,135,0.1); padding: 15px 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(246,219,135,0.3);">
   <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E8%80%81%E5%B8%AB%2FDavid.png?alt=media&token=75c76444-62a3-4e97-9940-beee7c7f3445"
@@ -657,16 +700,16 @@
     style="width:150px;height:150px;object-fit:cover;border-radius:12px;flex-shrink:0;">
   <div class="teacher-info" style="color:#f0e6a5;font-size:1.1em;line-height:1.5;">
     <h2 style="margin: 0 0 10px; line-height: 1.4;">
-      坎普費爾主任<br></h2>
+      斯卡瑪林主任<br></h2>
     <p>真正的黑暗從不是力量，而是失控的意志。</p>
   </div>
 </div>
 
 <!-- 特威克羅 班主任 -->
-<div class="teacher-card" data-group="director" data-teacher="優莉安娜・貝娜"
+<div class="teacher-card" data-group="director" data-teacher="瑟倫・莉菈"
   style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px; background: rgba(246,219,135,0.1); padding: 15px 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(246,219,135,0.3);">
-  <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E8%80%81%E5%B8%AB%2F%E5%84%AA%E5%88%A9.png?alt=media&token=f961b4d8-cfe1-43f2-868a-32da5f64e8ff"
-    alt="優莉安娜・貝娜"
+  <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/teacher%2F%E7%91%9F%E5%80%AB%E3%83%BB%E8%8E%89%E8%8F%88.png?alt=media&token=65c27096-e0d3-4eb2-bf32-4532f41a7488"
+    alt="瑟倫・莉菈"
     style="width:150px;height:150px;object-fit:cover;border-radius:12px;flex-shrink:0;">
   <div class="teacher-info" style="color:#f0e6a5;font-size:1.1em;line-height:1.5;">
     <h2 style="margin: 0 0 10px; line-height: 1.4;">
@@ -734,6 +777,19 @@
         <p>魔藥之道，乃以理馭力之術。若無紀律，藥性成毒；若無智慧，力量成災</p>
       </div>
     </div>
+	
+	<div class="teacher-card" data-group="professor" data-teacher="瑟倫・莉菈"
+      style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px; background: rgba(246,219,135,0.1); padding: 15px 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(246,219,135,0.3);">
+      <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/teacher%2F%E7%91%9F%E5%80%AB%E3%83%BB%E8%8E%89%E8%8F%88.png?alt=media&token=65c27096-e0d3-4eb2-bf32-4532f41a7488"
+        alt="瑟倫・莉菈"
+        style="width:150px;height:150px;object-fit:cover;border-radius:12px;flex-shrink:0;">
+      <div class="teacher-info" style="color:#f0e6a5;font-size:1.1em;line-height:1.5;">
+        <h2 style="margin: 0 0 10px; line-height: 1.4;">
+          魔藥學<br></h2>
+        <p>魔藥學的世界裡，每一滴藥水都蘊藏著無限可能。</p>
+      </div>
+    </div>
+	
 <!-- 社團老師區 -->
     <div class="teacher-card"
       data-group="club"
@@ -791,8 +847,7 @@
         <p>據說這個社團沒有名字，也沒有人敢提起它，如何加入社團，無人可知</p>
       </div>
     </div>
-
-   
+	
 
     <!-- 社團導師三 -->
     <div class="teacher-card"
@@ -808,6 +863,50 @@
         <p>源於太初時期的古老占術，以卡牌魔法推演今日運勢，而每次啟動魔法，都需付出微小卻真實的代價</p>
       </div>
     </div>
+	
+	<div class="teacher-card"
+  data-group="club"
+  data-teacher="社團導師五"
+  style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px; background: rgba(246,219,135,0.1); padding: 15px 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(246,219,135,0.3);">
+  <img
+    src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/teacher%2F%E6%8B%89%E5%88%A9.png?alt=media&token=447358ce-6de5-4506-b3b6-9ed903bde85b"
+    alt="社團導師五"
+    style="width: 150px; height: 150px; object-fit: cover; border-radius: 12px; flex-shrink: 0;">
+  <div class="teacher-info" style="color: #f0e6a5; font-size: 1.1em; line-height: 1.5;">
+    <h2 style="margin: 0 0 10px;">學生會老師</h2>
+    <p>學院與學生之間的橋樑，承擔著溝通、協調與活動組織的重任。</p>
+  </div>
+</div>
+
+<!-- 社團導師六 -->
+<div class="teacher-card"
+  data-group="club"
+  data-teacher="社團導師六"
+  style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px; background: rgba(246,219,135,0.1); padding: 15px 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(246,219,135,0.3);">
+  <img
+    src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/teacher%2F%E8%8C%89%E5%88%A9.png?alt=media&token=ea1bfb5a-87d5-4f85-9b14-23f2e199b676"
+    alt="社團導師六"
+    style="width: 150px; height: 150px; object-fit: cover; border-radius: 12px; flex-shrink: 0;">
+  <div class="teacher-info" style="color: #f0e6a5; font-size: 1.1em; line-height: 1.5;">
+    <h2 style="margin: 0 0 10px;">學生會老師</h2>
+    <p>學院與學生之間的橋樑，承擔著溝通、協調與活動組織的重任。</p>
+  </div>
+</div>
+
+<!-- 社團導師六 -->
+<div class="teacher-card"
+  data-group="club"
+  data-teacher="社團導師七"
+  style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px; background: rgba(246,219,135,0.1); padding: 15px 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(246,219,135,0.3);">
+  <img
+    src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/teacher%2F%E9%9B%85%E9%81%94%E7%88%BE%E5%85%8B.png?alt=media&token=278e3744-ae88-4483-941c-82e4ebcbcc12"
+    alt="社團導師六"
+    style="width: 150px; height: 150px; object-fit: cover; border-radius: 12px; flex-shrink: 0;">
+  <div class="teacher-info" style="color: #f0e6a5; font-size: 1.1em; line-height: 1.5;">
+    <h2 style="margin: 0 0 10px;">幻彩畫社老師</h2>
+    <p>藝術與魔法交織，每一筆每一色都是心靈與世界的對話，創造出奇幻、神秘的視覺奇蹟。</p>
+  </div>
+</div>
 
     <div class="teacher-card" data-group="staff"  data-teacher="餐廳姊姊"
       style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px; background: rgba(246,219,135,0.1); padding: 15px 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(246,219,135,0.3);">
@@ -852,6 +951,30 @@
         <p>學院內部秩序維護人員，負責學生的安全。</p>
       </div>
     </div>
+	
+	<div class="teacher-card" data-group="staff" data-teacher="嚮導"
+      style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px; background: rgba(246,219,135,0.1); padding: 15px 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(246,219,135,0.3);">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/teacher%2F%E9%98%BF%E8%8C%B2%E9%BB%98%E7%89%B9.png?alt=media&token=aef7663c-03ec-4777-9b20-61d2276ee058"
+        alt="嚮導" style="width: 150px; height: 150px; object-fit: cover; border-radius: 12px; flex-shrink: 0;">
+      <div class="teacher-info" style="color: #f0e6a5; font-size: 1.1em; line-height: 1.5;">
+        <h2 style="margin: 0 0 10px;">嚮導</h2>
+        <p>負責引領新生和訪客探索學院、了解學院各項設施。</p>
+      </div>
+    </div>
+	
+	<div class="teacher-card" data-group="staff" data-teacher="學院守護獸"
+      style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px; background: rgba(246,219,135,0.1); padding: 15px 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(246,219,135,0.3);">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/teacher%2F%E8%8C%B1%E9%BA%97%E8%91%89.png?alt=media&token=97142a89-f4fe-486a-b9cb-a538005ccdf1"
+        alt="學院守護獸" style="width: 150px; height: 150px; object-fit: cover; border-radius: 12px; flex-shrink: 0;">
+      <div class="teacher-info" style="color: #f0e6a5; font-size: 1.1em; line-height: 1.5;">
+        <h2 style="margin: 0 0 10px;">學院守護獸</h2>
+        <p>學院的神秘守護者，承載著學院的精髓與力量。</p>
+      </div>
+    </div>
+	
+	
 
     <div class="teacher-card" data-group="staff" data-teacher="Lily"
       style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px; background: rgba(246,219,135,0.1); padding: 15px 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(246,219,135,0.3);">
@@ -994,7 +1117,72 @@
 </div>
 
 
-    
+  
+<section id="scoreboard" class="content-section" style="display: none;">
+  <h2></h2>
+
+  <div class="score-container">
+
+    <!-- 霍爾芬多 -->
+    <div class="house-score" data-house="holfindo" data-score="0">
+      <h3>霍爾芬多</h3>
+      <div class="house-image">
+        <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E6%A0%A1%E5%BE%BD%2FHolfindo.png?alt=media&token=92aa53b0-9fb9-4d91-bb22-a8b5836909e6" alt="霍爾芬多代表圖">
+      </div>
+
+      <div class="jar">
+        <div class="score-bar"></div>
+      </div>
+
+      <p>分數：<span class="score-value">0</span> / 1000</p>
+    </div>
+
+    <!-- 坎普費爾 -->
+    <div class="house-score" data-house="skmalin" data-score="0">
+      <h3>坎普費爾</h3>
+      <div class="house-image">
+        <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E6%A0%A1%E5%BE%BD%2Fkampfer.png?alt=media&token=3c1fba28-265a-4c0e-9fe5-e6139cb332c6" alt="坎普費爾代表圖">
+      </div>
+
+      <div class="jar">
+        <div class="score-bar"></div>
+      </div>
+
+      <p>分數：<span class="score-value">0</span> / 1000</p>
+    </div>
+
+    <!-- 羅文帕夫 -->
+    <div class="house-score" data-house="rowenpaf" data-score="0">
+      <h3>赫文帕夫</h3>
+      <div class="house-image">
+        <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E6%A0%A1%E5%BE%BD%2FHuwenpaf.png?alt=media&token=0601abd2-5306-495a-a472-50843bd98518" alt="羅文帕夫代表圖">
+      </div>
+
+      <div class="jar">
+        <div class="score-bar"></div>
+      </div>
+
+      <p>分數：<span class="score-value">0</span> / 1000</p>
+    </div>
+
+    <!-- 特威克羅 -->
+    <div class="house-score" data-house="twicklow" data-score="0">
+      <h3>特威克勞</h3>
+      <div class="house-image">
+        <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E6%A0%A1%E5%BE%BD%2FTwicklaw.png?alt=media&token=67837eb6-0317-45fb-b10e-302e58a05b26" alt="特威克羅代表圖">
+      </div>
+
+      <div class="jar">
+        <div class="score-bar"></div>
+      </div>
+
+      <p>分數：<span class="score-value">500</span> / 1000</p>
+    </div>
+
+  </div>
+</section>
+
+
 
 
 
