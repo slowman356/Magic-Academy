@@ -381,17 +381,56 @@ body.use-image-title #entryPage .title-image{ display:block; }
   background: linear-gradient(180deg, rgba(200,168,98,.75), rgba(155,122,62,.75));
 }
 
-/* --- Division Actions & Twitch button --- */
-#division-actions{ margin-top:12px; display:flex; gap:10px; flex-wrap:wrap; }
-.twitch-btn{
-  display:inline-flex; align-items:center; gap:6px; padding:10px 14px;
-  border-radius:10px; background:#9146FF; color:#fff; text-decoration:none;
-  font-weight:700; letter-spacing:.3px; transition:transform .08s ease;
+
+#division-actions {
+  position: fixed;  
+  bottom: 16px;      
+  left: 16px;       
+  z-index: 4010;     
+  margin: 0;
+  display: flex;     
+  gap: 10px;        
+  flex-wrap: wrap;   
+  align-items: center; 
+  justify-content: flex-start; 
 }
-.twitch-btn:hover{ transform:translateY(-1px); }
-.twitch-btn:active{ transform:translateY(0); }
-.twitch-btn svg{ width:18px; height:18px; }
-.twitch-btn[aria-disabled="true"]{ opacity:.55; cursor:not-allowed; pointer-events:none; }
+
+/*  */
+.twitch-btn {
+  padding: 7px 10px;  
+  font-size: 15px;     
+  border-radius: 999px; 
+  background: rgba(145, 70, 255, 0.5); 
+  color: rgba(255, 255, 255, 1); 
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: .8px;
+  transition: transform .08s ease;
+  box-shadow: 0 8px 18px rgba(145, 70, 255, .35); 
+}
+
+.twitch-btn:hover {
+  transform: translateY(-1px); 
+}
+
+.twitch-btn:active {
+  transform: translateY(0); 
+}
+
+.twitch-btn svg {
+  width: 18px; 
+  height: 16px;
+}
+
+.twitch-btn[aria-disabled="true"] {
+  opacity: .55;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+
+
+
+
 
 /* =========================
    10/21Nav重新排版
@@ -515,8 +554,30 @@ nav{ all:unset; }
     line-height:40px; font-size:20px !important; border-radius:10px;
     background:rgba(0,0,0,.35); box-shadow:0 4px 12px rgba(0,0,0,.35); z-index:4010;
   }
-  #division-actions{ position:fixed; left:16px; right:auto; bottom:16px; z-index:4010; margin:0; }
-  .twitch-btn{ padding:10px 14px !important; font-size:14px !important; border-radius:999px; box-shadow:0 8px 18px rgba(145,70,255,.35); }
+ 
+/*  */
+#division-actions {
+  position: fixed;  
+  top: 16px;        
+  left: 16px;       
+  z-index: 4010;    
+  margin: 0;
+  display: flex;    
+  gap: 10px;        
+  flex-wrap: wrap;  
+  align-items: center; 
+  justify-content: flex-end; 
+}
+
+
+/* */
+.twitch-btn {
+  padding: 10px 14px !important; 
+  font-size: 18px !important;    
+  border-radius: 999px;          
+  box-shadow: 0 8px 18px rgba(145, 70, 255, .35); 
+}
+
 
   @supports (padding:max(0px)){
     #division-detail{ padding-bottom:calc(70px + env(safe-area-inset-bottom)) !important; }
@@ -634,15 +695,33 @@ nav{ all:unset; }
 }
 .teacher-info p{ margin:0 0 14px; }
 
-.twitch-link{
-  display:inline-block; margin-top:6px;
-  padding:8px 14px; border-radius:10px;
-  background:rgba(145,70,255,.15);
-  color:#d9c4ff; text-decoration:none;
-  border:1px solid rgba(145,70,255,.5);
-  font-size:.92em; transition:.2s;
+
+.twitch-link {
+  display: inline-block;
+  width: 80px;  /* 调整按钮的宽度 */
+  height: 80px; /* 调整按钮的高度 */
+  border-radius: 50%;  /* 圆形按钮 */
+  background: url('path-to-your-twitch-logo.png') no-repeat center center; /* 使用上传的 Twitch logo */
+  background-size: 50px 50px;  /* 增大 logo */
+  text-decoration: none;
+  border: 1px solid rgba(145, 70, 255, .5);
+  transition: .2s;
+
+  /* 固定位置 */
+  position: fixed;   /* 确保按钮固定 */
+  bottom: 16px;      /* 距离页面底部16px */
+  right: 16px;       /* 距离页面右侧16px */
+  z-index: 4010;     /* 确保按钮显示在最上层 */
 }
-.twitch-link:hover{ background:rgba(145,70,255,.25); color:#fff; }
+
+/* --- 懸停效果 --- */
+.twitch-link:hover {
+  background: rgba(145, 70, 255, .25);
+  border-color: rgba(145, 70, 255, .7);
+}
+
+
+
 
 @media (prefers-reduced-motion: reduce){
   .studentsSection .student-card,
