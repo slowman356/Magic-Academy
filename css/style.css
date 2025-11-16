@@ -1364,3 +1364,187 @@ nav{ all:unset; }
     max-width: 100%;
   }
 }
+
+#house-score-section {
+  padding: 20px;
+  background: #120018;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+
+.house-score {
+  width: 180px;
+  background: #1f1230;
+  padding: 12px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+}
+.house-score h3 {
+  font-size: 1.2rem;           
+  font-weight: bold;          
+  text-align: center;         
+  letter-spacing: 1px;        
+  margin-top: 1.5em;            /* 增加 margin-top，讓文字往下移動 */
+  margin-bottom: 0.5em;
+  color: #fff;                
+}
+
+
+.house-image {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.house-image img {
+  max-width: 200px;
+  height: auto;
+  display: inline-block;
+}
+
+
+
+
+.jar {
+  width: 100px;
+  height: 380px;
+  margin: 10px auto 12px;
+  position: relative;
+  background-color: rgba(62, 62, 62, 0.4);  
+  border-radius: 30px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 25px 5px rgba(0, 0, 0, 0.6); 
+  transition: box-shadow 0.3s ease-in-out; 
+}
+
+
+.jar .score-bar {
+  width: 100%;
+  height: 0%; 
+  background: var(--sand-color); 
+  border-radius: 30px; 
+  position: absolute;
+  bottom: 0;  
+  transition: height 1s ease-in-out; 
+}
+
+
+
+/* 霍爾芬多 */
+.house-score[data-house="holfindo"] .score-bar {
+  --sand-color: #ff4343;  
+}
+.house-score[data-house="holfindo"] .jar {
+  box-shadow: 0 0 20px 5px rgba(255, 67, 67, 0.8);  
+}
+
+/* 坎普費爾 */
+.house-score[data-house="skmalin"] .score-bar {
+  --sand-color: #3e7bff;  
+}
+.house-score[data-house="skmalin"] .jar {
+  box-shadow: 0 0 20px 5px rgba(48, 200, 90, 0.8);  
+}
+
+/* 赫文帕夫 */
+.house-score[data-house="rowenpaf"] .score-bar {
+  --sand-color: #ffd447;  
+}
+.house-score[data-house="rowenpaf"] .jar {
+  box-shadow: 0 0 20px 5px rgba(255, 212, 71, 0.8); 
+}
+
+/* 特威克勞 */
+.house-score[data-house="twicklow"] .score-bar {
+  --sand-color: #30c85a; 
+}
+.house-score[data-house="twicklow"] .jar {
+  box-shadow: 0 0 20px 5px rgba(53, 94, 205, 1);  
+}
+
+
+.house-score p {
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.score-link {
+  color: #f6db87;  
+  font-size: 1.0rem;  
+  font-weight: bold;  
+  text-decoration: none;  
+}
+
+/* 魔鏡日報 */
+#newspaper {
+  text-align: center;  
+  margin-top: 20px;
+  font-size: 1.5rem; 
+  color: #f6db87; 
+  font-weight: bold;  
+}
+
+
+.update-text {
+  text-align: center;  
+  margin-top: 3px;      
+  font-size: 1.2rem;    
+  color: #f6db87;       
+}
+
+
+/* 文章容器 */
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center; 
+}
+
+/* 單篇報導樣式 */
+.news-item {
+  background: none;  
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;  
+}
+
+.news-item img {
+  width: 700px;  
+  height: 800px;  
+  object-fit: cover;  
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.news-item img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.news-item img:hover {
+  transform: scale(1.05);
+}
+
+.magic-effect-text {
+  text-align: center;
+  font-size: 1rem; 
+  color: #fff;
+  margin-top: 10px;
+}
