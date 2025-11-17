@@ -159,7 +159,7 @@ const divisionData = {
 【角色】艾莉亞・瑟蕾絲
 【性別】女
 【年齡】18歲 
-【種族】精靈 
+【種族】人類 
 【個性】看起來柔和可親，但內心有著不容忽視的執著與勇氣
 【簡介】十年前，星歌村在魔族的突襲中被摧毀。艾莉亞是少數倖存者之一，被奧德倫的學者救出。
 `,
@@ -2085,31 +2085,7 @@ navLinks.forEach(link => {
 });
 
 
-const MAX_HOUSE_SCORE = 1000;
-
-
-function refreshAllProgressBarsFromDataset() {
-  document.querySelectorAll(".house-score").forEach(houseEl => {
-    const progressBar = houseEl.querySelector(".score-bar");
-    const scoreSpan   = houseEl.querySelector(".score-value");
-    if (!progressBar || !scoreSpan) return;
-
-    const raw     = parseInt(houseEl.dataset.score || "0", 10);
-    const score   = Math.max(0, Math.min(raw, MAX_HOUSE_SCORE));
-    const percent = score / MAX_HOUSE_SCORE;
-    progressBar.style.height = (percent * 100) + "%";
-
-    
-    scoreSpan.textContent = score;
-  });
-}
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  refreshAllProgressBarsFromDataset();
-});
-
-
+const MAX_HOUSE_SCORE = 1000; // 你原本定義多少就用多少
 
 function setHouseScore(houseKey, newScore) {
   const houseEl = document.querySelector(`.house-score[data-house="${houseKey}"]`);
@@ -2121,38 +2097,56 @@ function setHouseScore(houseKey, newScore) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  const sections          = document.querySelectorAll('.section');
-  const studentsSection   = document.getElementById('students');
-  const scoreboardSection = document.getElementById('scoreboard');
-
-  const scoreLinks        = document.querySelectorAll('[data-section="scoreboard"], .score-link');
-
-  if (!scoreboardSection) return;
+  const sections = document.querySelectorAll('.section');
 
   
-  refreshAllProgressBarsFromDataset();
-
-  
-  scoreboardSection.style.display = 'none';
-
-  scoreLinks.forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();    
-      sections.forEach(sec => sec.style.display = 'none'); 
-      scoreboardSection.style.display = 'block';
-      refreshAllProgressBarsFromDataset();
-
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+  function showSection(targetId) {
+    sections.forEach(sec => {
+      sec.style.display = (sec.id === targetId) ? 'block' : 'none';
     });
-  });
 
-  const studentMenuLinks = document.querySelectorAll('[data-section="students"]');
-  studentMenuLinks.forEach(link => {
+    
+    if (targetId === 'scoreboard') {
+      refreshAllProgressBarsFromDataset();
+    }
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  
+  sections.forEach(sec => sec.style.display = 'none');
+  
+  showSection('home');
+
+  
+  document.querySelectorAll('[data-section]').forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
-      sections.forEach(sec => sec.style.display = 'none');
-      studentsSection.style.display = 'block';
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const targetId = this.getAttribute('data-section');
+      if (!targetId) return;
+      showSection(targetId);
     });
   });
+
+  
+  const innerScoreLinks = document.querySelectorAll('.score-link');
+  innerScoreLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      showSection('scoreboard');
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+
+  // 預設隱藏 home 區塊
+  const homeSection = document.getElementById("home");
+  if (homeSection) homeSection.style.display = "none";
+
+  // 按下 ENTER 後才顯示 home
+  document.getElementById("joinBtn").addEventListener("click", () => {
+    document.getElementById("entryPage").style.display = "none";
+    if (homeSection) homeSection.style.display = "block";
+  });
+
 });
