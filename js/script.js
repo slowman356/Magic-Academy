@@ -2122,23 +2122,31 @@ navLinks.forEach(link => {
   });
 });
 
-const MAX_HOUSE_SCORE = 1000; 
+
+const MAX_HOUSE_SCORE = 1000;
 
 
 function refreshAllProgressBarsFromDataset() {
   document.querySelectorAll(".house-score").forEach(houseEl => {
     const progressBar = houseEl.querySelector(".score-bar");
-    const scoreSpan = houseEl.querySelector(".score-value");
+    const scoreSpan   = houseEl.querySelector(".score-value");
     if (!progressBar || !scoreSpan) return;
 
+    const raw     = parseInt(houseEl.dataset.score || "0", 10);
+    const score   = Math.max(0, Math.min(raw, MAX_HOUSE_SCORE));
+    const percent = score / MAX_HOUSE_SCORE;
+    progressBar.style.height = (percent * 100) + "%";
 
-    const raw = parseInt(houseEl.dataset.score || "0", 10);
-    const score = Math.max(0, Math.min(raw, MAX_HOUSE_SCORE)); 
-    const percent = score / MAX_HOUSE_SCORE;                   
-    progressBar.style.height = percent * 100 + "%"; 
+    
     scoreSpan.textContent = score;
   });
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  refreshAllProgressBarsFromDataset();
+});
+
 
 
 function setHouseScore(houseKey, newScore) {
@@ -2146,35 +2154,43 @@ function setHouseScore(houseKey, newScore) {
   if (!houseEl) return;
 
   const score = Math.max(0, Math.min(parseInt(newScore || 0, 10), MAX_HOUSE_SCORE));
-  houseEl.dataset.score = score;              
-  refreshAllProgressBarsFromDataset();          
+  houseEl.dataset.score = score;
+  refreshAllProgressBarsFromDataset();
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-
+document.addEventListener('DOMContentLoaded', function () {
+  const sections          = document.querySelectorAll('.section');
+  const studentsSection   = document.getElementById('students');
   const scoreboardSection = document.getElementById('scoreboard');
-  const scoreLinks = document.querySelectorAll('.score-link');
-  const allSections = document.querySelectorAll('.section');
-  const studentsSection = document.getElementById('students');
 
-  if (!scoreboardSection || scoreLinks.length === 0) return;
+  const scoreLinks        = document.querySelectorAll('[data-section="scoreboard"], .score-link');
 
+  if (!scoreboardSection) return;
+
+  
+  refreshAllProgressBarsFromDataset();
+
+  
   scoreboardSection.style.display = 'none';
 
   scoreLinks.forEach(link => {
-    link.addEventListener('click', function (event) {
-      event.preventDefault();
-
-      // 先切到學生頁
-      if (studentsSection) {
-        allSections.forEach(sec => sec.style.display = 'none');
-        studentsSection.style.display = 'block';
-      }
-
-      // 直接顯示分數（不再切換關掉）
+    link.addEventListener('click', function (e) {
+      e.preventDefault();    
+      sections.forEach(sec => sec.style.display = 'none'); 
       scoreboardSection.style.display = 'block';
+      refreshAllProgressBarsFromDataset();
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
 
+  const studentMenuLinks = document.querySelectorAll('[data-section="students"]');
+  studentMenuLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      sections.forEach(sec => sec.style.display = 'none');
+      studentsSection.style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
 });
-
