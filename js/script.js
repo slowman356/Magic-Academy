@@ -2150,27 +2150,31 @@ function setHouseScore(houseKey, newScore) {
   refreshAllProgressBarsFromDataset();          
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  refreshAllProgressBarsFromDataset();
-});
-
 document.addEventListener('DOMContentLoaded', function() {
-  
-  const scoreLink = document.querySelector('.score-link');
-  const scoreboardSection = document.getElementById('scoreboard');
 
-  
+  const scoreboardSection = document.getElementById('scoreboard');
+  const scoreLinks = document.querySelectorAll('.score-link');
+  const allSections = document.querySelectorAll('.section');
+  const studentsSection = document.getElementById('students');
+
+  if (!scoreboardSection || scoreLinks.length === 0) return;
+
   scoreboardSection.style.display = 'none';
 
-  
-  scoreLink.addEventListener('click', function(event) {
-    event.preventDefault(); 
+  scoreLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
 
-    
-    if (scoreboardSection.style.display === 'none') {
-      scoreboardSection.style.display = 'block'; 
-    } else {
-      scoreboardSection.style.display = 'none';  
-    }
+      // 先切到學生頁
+      if (studentsSection) {
+        allSections.forEach(sec => sec.style.display = 'none');
+        studentsSection.style.display = 'block';
+      }
+
+      // 直接顯示分數（不再切換關掉）
+      scoreboardSection.style.display = 'block';
+    });
   });
+
 });
+
