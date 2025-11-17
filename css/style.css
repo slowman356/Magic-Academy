@@ -1474,7 +1474,7 @@ nav{ all:unset; }
   font-weight: bold;          
   text-align: center;         
   letter-spacing: 1px;        
-  margin-top: 1.5em;            /* 增加 margin-top，讓文字往下移動 */
+  margin-top: 1.5em;            
   margin-bottom: 0.5em;
   color: #fff;                
 }
@@ -1528,7 +1528,7 @@ nav{ all:unset; }
 
 /* 坎普費爾 */
 .house-score[data-house="skmalin"] .score-bar {
-  --sand-color: #3e7bff;  
+  --sand-color: #0f9b4c;  
 }
 .house-score[data-house="skmalin"] .jar {
   box-shadow: 0 0 20px 5px rgba(48, 200, 90, 0.8);  
@@ -1544,8 +1544,9 @@ nav{ all:unset; }
 
 /* 特威克勞 */
 .house-score[data-house="twicklow"] .score-bar {
-  --sand-color: #30c85a; 
+  --sand-color: #3b8eff;   
 }
+
 .house-score[data-house="twicklow"] .jar {
   box-shadow: 0 0 20px 5px rgba(53, 94, 205, 1);  
 }
