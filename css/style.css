@@ -658,6 +658,11 @@ nav{ all:unset; }
   opacity: 1;
 }
 
+.student-info h3 {
+  text-align: center;
+  width: 100%;
+}
+
 .teacher-card{
   display:flex; align-items:flex-start; gap:20px; margin-bottom:30px;
   background:rgba(246,219,135,.08);
@@ -698,23 +703,23 @@ nav{ all:unset; }
 
 .twitch-link {
   display: inline-block;
-  width: 80px;  /* 调整按钮的宽度 */
-  height: 80px; /* 调整按钮的高度 */
-  border-radius: 50%;  /* 圆形按钮 */
-  background: url('path-to-your-twitch-logo.png') no-repeat center center; /* 使用上传的 Twitch logo */
-  background-size: 50px 50px;  /* 增大 logo */
+  width: 80px;  
+  height: 80px; 
+  border-radius: 50%;  
+  background: url('path-to-your-twitch-logo.png') no-repeat center center;
+  background-size: 50px 50px;  
   text-decoration: none;
   border: 1px solid rgba(145, 70, 255, .5);
   transition: .2s;
 
-  /* 固定位置 */
-  position: fixed;   /* 确保按钮固定 */
-  bottom: 16px;      /* 距离页面底部16px */
-  right: 16px;       /* 距离页面右侧16px */
-  z-index: 4010;     /* 确保按钮显示在最上层 */
+  
+  position: fixed;   
+  bottom: 16px;      
+  right: 16px;       
+  z-index: 4010;     
 }
 
-/* --- 懸停效果 --- */
+
 .twitch-link:hover {
   background: rgba(145, 70, 255, .25);
   border-color: rgba(145, 70, 255, .7);
