@@ -118,7 +118,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/re_noe_'
     },
     '學生3': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E5%88%BB%E7%88%BE%E6%9F%8F%E6%B4%9B%E6%96%AF.png?alt=media&token=19dcec8f-a433-49e6-8f9b-2f28545cd79e',
       text: `
 【角色】刻爾柏洛斯・吉娃娃 
 【性別】男
@@ -142,7 +142,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/dandanny1026'
     },
     '學生5': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%96%87%E8%96%87%E5%AE%89.png?alt=media&token=796d7572-ef1c-4ef1-b4b4-7d1ddf0dfe7e',
       text: `
 【角色】薇薇安・胡珀
 【性別】女
@@ -154,7 +154,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/kazehaya_yui'
     },
     '學生6': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%89%BE%E8%8E%89%E4%BA%9E.png?alt=media&token=e56cfd22-20e5-403d-bcdf-9ed40ecadb50',
       text: `
 【角色】艾莉亞・瑟蕾絲
 【性別】女
@@ -178,7 +178,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/join90328'
     },
     '學生8': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%82%AF%E5%B0%BC.png?alt=media&token=4ed90cfb-b534-4bce-9bf0-9d0f9b818718',
       text: `
 【角色】肯尼・葛林伍夫
 【性別】男
@@ -202,7 +202,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/lupo_relive'
     },
     '學生10': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E7%8F%82%E7%B7%B4.png?alt=media&token=6640f941-0488-454f-9427-268e22edaf72',
       text: `
 【角色】珂練
 【性別】女
@@ -226,7 +226,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/yamouo'
     },
     '學生12': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E7%93%A6%E5%A8%83.png?alt=media&token=fd206fa2-d59b-4ede-8f18-d2be8d8a43e7',
       text: `
 【角色】瓦娃‧希德拉
 【性別】女
@@ -240,7 +240,7 @@ const divisionData = {
   },
   skmalin: {
     '學生1': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%96%A9%E8%8A%AE%E6%8B%89.png?alt=media&token=56288861-51dd-4e52-8d4c-496c49074a65',
       text: `
 【角色】薩芮拉
 【性別】女
@@ -252,7 +252,7 @@ const divisionData = {
       twitch: 'hhttps://www.twitch.tv/s73225200'
     },
     '學生2': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E6%B0%B4%E4%BB%99.png?alt=media&token=8415e3e8-9a76-439b-900a-c975d7b39411',
       text: `
 【角色】水仙·穆爾西
 【性別】女
@@ -276,7 +276,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/waitou1117'
     },
     '學生4': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%88%92%E6%B4%9B%E9%87%8C%E6%81%A9.png?alt=media&token=fee23725-e865-492d-b94e-2b511daa098c',
       text: `
 【角色】舒洛里恩·灰花
 【性別】女
@@ -288,16 +288,16 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/sofox_relive'
     },
     '學生5': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://via.placeholder.com/150?text=特威克羅學生12',
       text: `
-【角色】莎咪·理貢
+【角色】史嘉蕾・懷絲‧絲塔
 【性別】女
-【年齡】18歲 
-【種族】人類
-【個性】矛盾、猶豫不決、自卑、迷茫、渴望知識
-【簡介】內心非常矛盾，一方面渴望外界的知識，以及被人理解、認同、接納，另一方面又害怕自己的動作會傷害到別人
+【年齡】18歲
+【種族】精靈
+【個性】沒什麼感情波動，高貴的精靈血統讓她有些高傲
+【簡介】非常喜歡魔法，目標是在漫長的生命中創造出自己的魔法流派、甚至是讓自己的魔法成為一種信仰。
 `,
-      twitch: 'https://www.twitch.tv/beibei401'
+      twitch: 'https://www.twitch.tv/homete416'
     },
     '學生6': {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
@@ -324,31 +324,31 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/raiki_raibao'
     },
     '學生8': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+     img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
       text: `
-【角色】安柏·史塔克
+【角色】尼諾・普普卡
 【性別】男
-【年齡】18歲 
-【種族】魔族 
-【個性】好奇貪婪，活潑幽默，重視情誼
-【簡介】出身於次級貴族家庭，自幼聰慧過人，卻因過度好奇曾誤闖禁書庫，被迫離鄉就學。
+【年齡】18歲
+【種族】幽影族 
+【個性】冷靜神秘，理智而敏感，對未知充滿好奇
+【簡介】出生於幽影族，族人本不與人類世界頻繁接觸，但對生者世界充滿好奇。
 `,
-      twitch: 'https://www.twitch.tv/akizkke0328'
+      twitch: 'https://www.twitch.tv/blue_kao'
     },
     '學生9': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+     img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
       text: `
-【角色】瑪莉蓮·吱吱
+【角色】米拉·艾芙琳
 【性別】女
-【年齡】18歲 
-【種族】獸人族
-【個性】性感 撫媚 騷猴
-【簡介】一隻極其聰明、手腳靈活的卷尾猴，他並非來自森林，而是一個瑪莉蓮家族的寵物猴。
+【年齡】18歲
+【種族】半精靈 
+【個性】溫柔、怕生、喜歡小動物、聰明但有點小迷糊
+【簡介】她在童年時曾誤入父親封印的古老森林，遭受魔物襲擊，最後靠著自己微弱的治癒魔法保住了性命
 `,
-      twitch: 'https://www.twitch.tv/ume_zz'
+      twitch: 'https://www.twitch.tv/isuzumaccha'
     },
     '學生10': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E6%96%87%E5%98%89%E5%BE%B7.png?alt=media&token=2e9973e2-2c97-420b-800c-db1d1762d59a',
       text: `
 【角色】文嘉德·奈洛斯
 【性別】男
@@ -372,7 +372,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/umii_u'
     },
     '學生12': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E6%B4%BE%E5%B4%94%E5%85%8B.png?alt=media&token=8acbd6bf-724d-436f-9864-f792238cf30d',
       text: `
 【角色】派崔克・雷文沙德
 【性別】男
@@ -422,19 +422,19 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/yoyo30108'
     },
     '學生4': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%89%BE%E8%95%BE%E8%AB%BE.png?alt=media&token=4c7df3ed-903a-4f8d-a9f9-1c79afe669c5',
       text: `
 【角色】鈴・艾蕾諾 
 【性別】女
 【年齡】18歲
 【種族】精靈 
-【個性】膽小、害羞，受到驚嚇也會盡量保持溫柔
-【簡介】花之森林長大的精靈。目睹了父母為守護而犧牲，使她變得膽小怕黑；在舅舅施下的「勇氣之花」的魔法陪伴下，她帶著小小的勇氣踏上旅程。
+【個性】膽小、害羞但極度溫柔的孩子。
+【簡介】父母為了保護森林與孩子，燃起光之魔法奮戰至最後一刻。他想成為與父母一樣厲害的魔法師；卻也害怕 害怕陌生的世界、害怕失敗、害怕孤單。
 `,
       twitch: 'https://www.twitch.tv/nekoa_o'
     },
     '學生5': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E9%A6%AC%E5%8F%AF.png?alt=media&token=ae2078f7-74c7-464e-a54d-b865c76ef31a',
       text: `
 【角色】馬可・菠蘿
 【性別】女
@@ -446,7 +446,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/peggy_030'
     },
     '學生6': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%B3%BD%E5%8B%92%E6%96%AF.png?alt=media&token=ff0f4d4c-5270-4624-973a-7696a4f7de76',
       text: `
 【角色】賽勒斯・格倫
 【性別】男
@@ -458,7 +458,7 @@ const divisionData = {
       twitch: ''
     },
     '學生7': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E6%B6%85%E6%B3%A2%E7%B5%B2%E5%A7%AC.png?alt=media&token=771938cf-1b21-4ca6-8458-23968498d3dd',
       text: `
 【角色】涅比亞 ・涅波絲姬
 【性別】女
@@ -482,7 +482,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/senkitsune_huni'
     },
     '學生9': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%8F%B2%E5%B0%BC.png?alt=media&token=13f282e3-0458-431d-8e21-a6bd2bdafd54',
       text: `
 【角色】菲尼・克斯
 【性別】男
@@ -518,21 +518,21 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/yaya6315341'
     },
     '學生12': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
       text: `
-【角色】米拉·艾芙琳
+【角色】凱特琳・汀斯莉
 【性別】女
 【年齡】18歲
-【種族】半精靈 
-【個性】溫柔、怕生、喜歡小動物、聰明但有點小迷糊
-【簡介】她在童年時曾誤入父親封印的古老森林，遭受魔物襲擊，最後靠著自己微弱的治癒魔法保住了性命
+【種族】人類
+【個性】外向、樂天、嘴甜、行動派、愛管閒事但心地超好
+【簡介】凱特琳認為，在這個有魔族的世界，光成為警察是不夠的，肯定要學會魔法才能更有信心對抗這一切
 `,
-      twitch: 'https://www.twitch.tv/isuzumaccha'
+      twitch: 'https://www.twitch.tv/hipudding1223'
     }
   },
   twicklow: {
     '學生1': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E5%A6%AE%E8%8A%99.png?alt=media&token=150a7764-b4be-4d87-8fef-278d47d74cce',
       text: `
 【角色】妮芙·羅萊特
 【性別】女
@@ -546,17 +546,17 @@ const divisionData = {
     '學生2': {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
       text: `
-【角色】尼諾・普普卡
+【角色】安柏.史塔克
 【性別】男
 【年齡】18歲
-【種族】幽影族 
-【個性】冷靜神秘，理智而敏感，對未知充滿好奇
-【簡介】出生於幽影族，族人本不與人類世界頻繁接觸，但對生者世界充滿好奇。
+【種族】魔族 
+【個性】好奇貪婪，活潑幽默，重視情誼
+【簡介】貪婪於知識與力量的他，總想突破界限、挑戰禁忌。雖常闖禍惹事，卻以機智與幽默化解危機。
 `,
       twitch: 'https://www.twitch.tv/blue_kao'
     },
     '學生3': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%B8%A2%E5%8D%A1.png?alt=media&token=41e41190-5857-480d-8417-86a3f866634e',
       text: `
 【角色】踢卡.赫布斯特
 【性別】女
@@ -568,7 +568,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/ttspoon'
     },
     '學生4': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E5%93%A5%E5%80%AB%E6%AF%94%E5%A9%AD.png?alt=media&token=e85a690d-5555-4c29-92be-42e9f9bff84d',
       text: `
 【角色】哥倫比婭・沐玥
 【性別】女
@@ -618,14 +618,14 @@ const divisionData = {
     '學生8': {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
       text: `
-【角色】艾涅爾．平安
-【性別】男
-【年齡】18歲
-【種族】游牧族群──「風隱者」 
-【個性】喜愛刺激自由冒險，喜歡跟有相同目標的人相處
-【簡介】他自幼便能聽見「風的聲音」，能感受到氣流的情緒，並在夢中看到星辰的軌跡。
+【角色】莎咪·理貢
+【性別】女
+【年齡】18歲 
+【種族】人類
+【個性】矛盾、猶豫不決、自卑、迷茫、渴望知識
+【簡介】內心非常矛盾，一方面渴望外界的知識，以及被人理解、認同、接納，另一方面又害怕自己的動作會傷害到別人
 `,
-      twitch: 'https://www.twitch.tv/pushxrp'
+      twitch: 'https://www.twitch.tv/beibei401'
     },
     '學生9': {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
@@ -642,17 +642,29 @@ const divisionData = {
     '學生10': {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
       text: `
-【角色】凱特琳・汀斯莉
+【角色】艾涅爾．平安
 【性別】女
 【年齡】18歲
-【種族】人類
-【個性】外向、樂天、嘴甜、行動派、愛管閒事但心地超好
-【簡介】凱特琳認為，在這個有魔族的世界，光成為警察是不夠的，肯定要學會魔法才能更有信心對抗這一切
+【種族】游牧族群──「風隱者」 
+【個性】喜愛刺激自由冒險，喜歡跟有相同目標的人相處
+【簡介】他自幼便能聽見「風的聲音」，能感受到氣流的情緒，並在夢中看到星辰的軌跡。
 `,
-      twitch: 'https://www.twitch.tv/hipudding1223'
+      twitch: 'https://www.twitch.tv/pushxrp'
     },
     '學生11': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      text: `
+【角色】瑪莉蓮·吱吱
+【性別】女
+【年齡】18歲 
+【種族】獸人族
+【個性】性感 撫媚 騷猴
+【簡介】一隻極其聰明、手腳靈活的卷尾猴，他並非來自森林，而是一個瑪莉蓮家族的寵物猴。
+`,
+      twitch: 'https://www.twitch.tv/ume_zz'
+    },
+    '學生12': {
+    img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
       text: `
 【角色】羅伊・馬斯坦古
 【性別】男
@@ -662,19 +674,7 @@ const divisionData = {
 【簡介】侍奉著火焰的精靈一族，偷偷與人類女子生下的半精靈。從小生活在人類世界的他不知道自己的身分，只知道自己很喜歡火焰的炙熱與光芒。
 `,
       twitch: 'https://www.twitch.tv/aplus0v0'
-    },
-    '學生12': {
-      img: 'https://via.placeholder.com/150?text=特威克羅學生12',
-      text: `
-【角色】史嘉蕾・懷絲‧絲塔
-【性別】女
-【年齡】18歲
-【種族】精靈
-【個性】沒什麼感情波動，高貴的精靈血統讓她有些高傲
-【簡介】非常喜歡魔法，目標是在漫長的生命中創造出自己的魔法流派、甚至是讓自己的魔法成為一種信仰。
-`,
-      twitch: 'https://www.twitch.tv/homete416'
-    }
+     }
   }
 };
 
@@ -2139,11 +2139,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 document.addEventListener("DOMContentLoaded", () => {
 
-  // 預設隱藏 home 區塊
+
   const homeSection = document.getElementById("home");
   if (homeSection) homeSection.style.display = "none";
 
-  // 按下 ENTER 後才顯示 home
+  
   document.getElementById("joinBtn").addEventListener("click", () => {
     document.getElementById("entryPage").style.display = "none";
     if (homeSection) homeSection.style.display = "block";
@@ -2151,3 +2151,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const navLinks = document.querySelectorAll('#newspaperNav a');
+  const pages    = document.querySelectorAll('#newspaper .news-page');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      const targetPage = this.dataset.page; 
+
+      
+      navLinks.forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+
+      
+      pages.forEach(page => {
+        if (page.dataset.page === targetPage) {
+          page.style.display = 'block';
+        } else {
+          page.style.display = 'none';
+        }
+      });
+    });
+  });
+});
