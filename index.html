@@ -82,35 +82,229 @@
   <p class="update-text">每日更新報導</p>
   <p class="magic-effect-text">點擊使用魔法放大！</p>
 
-  <div class="news-container">
-    <!-- 第一排 -->
-    <div class="news-item" style="flex: 1 1 30%; text-align: left;">
-      <div class="news-image">
-        <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E5%A0%B1%E7%B4%993.gif?alt=media&token=5f32ea71-1961-424b-9266-c947f5bcb2b7" target="_blank">
-          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E5%A0%B1%E7%B4%993.gif?alt=media&token=5f32ea71-1961-424b-9266-c947f5bcb2b7" alt="魔鏡日報圖片" class="clickable-image">
-        </a>
-      </div>
-    </div>
+  
+  <div id="newspaperNav">
+    <a data-page="page1" class="active">第一頁</a>
+    <a data-page="page2">第二頁</a>
+    <a data-page="page3">第三頁</a>
+    <a data-page="page4">第四頁</a>
+  </div>
 
-    <!-- 第二排 -->
-    <div class="news-item" style="flex: 1 1 30%; text-align: center;">
-      <div class="news-image">
-        <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F1117.gif?alt=media&token=929e95a4-05bd-4952-8412-9805ba4050f6" target="_blank">
-          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F1117.gif?alt=media&token=929e95a4-05bd-4952-8412-9805ba4050f6" alt="魔鏡日報圖片" class="clickable-image">
-        </a>
-      </div>
-    </div>
+ 
+  <div class="news-page" data-page="page1" style="display: block;">
+    <div class="news-container">
 
-    <!-- 第三排 -->
-    <div class="news-item" style="flex: 1 1 30%; text-align: right;">
-      <div class="news-image">
-        <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F1118%E5%A0%B1%E7%B4%99.gif?alt=media&token=a912d102-2a08-47dd-a86a-8f30cd2d7f4e" target="_blank">
-          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F1118%E5%A0%B1%E7%B4%99.gif?alt=media&token=a912d102-2a08-47dd-a86a-8f30cd2d7f4e" alt="魔鏡日報圖片" class="clickable-image">
-        </a>
+      
+      <div class="news-item" style="flex: 1 1 30%; text-align: left;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E5%A0%B1%E7%B4%993.gif?alt=media&token=5f32ea71-1961-424b-9266-c947f5bcb2b7" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E5%A0%B1%E7%B4%993.gif?alt=media&token=5f32ea71-1961-424b-9266-c947f5bcb2b7" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+
+      <div class="news-item" style="flex: 1 1 30%; text-align: center;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F1117.gif?alt=media&token=929e95a4-05bd-4952-8412-9805ba4050f6" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F1117.gif?alt=media&token=929e95a4-05bd-4952-8412-9805ba4050f6" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+
+      <div class="news-item" style="flex: 1 1 30%; text-align: right;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F1118%E5%A0%B1%E7%B4%99.gif?alt=media&token=a912d102-2a08-47dd-a86a-8f30cd2d7f4e" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F1118%E5%A0%B1%E7%B4%99.gif?alt=media&token=a912d102-2a08-47dd-a86a-8f30cd2d7f4e" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="news-item" style="flex: 1 1 30%; text-align: left; margin-top: 15px;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+
+      <div class="news-item" style="flex: 1 1 30%; text-align: center; margin-top: 15px;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+
+      <div class="news-item" style="flex: 1 1 30%; text-align: right; margin-top: 15px;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <div class="news-page" data-page="page2" style="display: none;">
+    <div class="news-container">
+      <!-- 第一排 -->
+      <div class="news-item" style="flex: 1 1 30%; text-align: left;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+      <div class="news-item" style="flex: 1 1 30%; text-align: center;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+      <div class="news-item" style="flex: 1 1 30%; text-align: right;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+
+      <!-- 第二排 -->
+      <div class="news-item" style="flex: 1 1 30%; text-align: left; margin-top: 15px;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+      <div class="news-item" style="flex: 1 1 30%; text-align: center; margin-top: 15px;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+      <div class="news-item" style="flex: 1 1 30%; text-align: right; margin-top: 15px;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- 🔹 第三頁 -->
+  <div class="news-page" data-page="page3" style="display: none;">
+    <div class="news-container">
+      <!-- 第一排 -->
+      <div class="news-item" style="flex: 1 1 30%; text-align: left;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+      <div class="news-item" style="flex: 1 1 30%; text-align: center;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+      <div class="news-item" style="flex: 1 1 30%; text-align: right;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+
+      <!-- 第二排 -->
+      <div class="news-item" style="flex: 1 1 30%; text-align: left; margin-top: 15px;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+      <div class="news-item" style="flex: 1 1 30%; text-align: center; margin-top: 15px;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+      <div class="news-item" style="flex: 1 1 30%; text-align: right; margin-top: 15px;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔹 第四頁 -->
+  <div class="news-page" data-page="page4" style="display: none;">
+    <div class="news-container">
+      <!-- 第一排 -->
+      <div class="news-item" style="flex: 1 1 30%; text-align: left;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+      <div class="news-item" style="flex: 1 1 30%; text-align: center;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+      <div class="news-item" style="flex: 1 1 30%; text-align: right;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+
+      <!-- 第二排 -->
+      <div class="news-item" style="flex: 1 1 30%; text-align: left; margin-top: 15px;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+      <div class="news-item" style="flex: 1 1 30%; text-align: center; margin-top: 15px;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+      <div class="news-item" style="flex: 1 1 30%; text-align: right; margin-top: 15px;">
+        <div class="news-image">
+          <a href="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" target="_blank">
+            <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%A0%B1%E7%B4%99%2F%E6%BC%82%E6%B5%AE.png?alt=media&token=58a58d93-b233-4d3c-b73d-15d9ce63d6a4" alt="魔鏡日報圖片" class="clickable-image">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
+
+
+
+
 
 
 
@@ -236,17 +430,17 @@
           </div>
         </div>
         <div class="student-card" data-student="學生5" data-house="holfindo">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生5頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%96%87%E8%96%87%E5%AE%89.png?alt=media&token=796d7572-ef1c-4ef1-b4b4-7d1ddf0dfe7e" alt="學生5頭貼" />
           <div class="student-info">
             <h3>薇薇安・胡珀</h3>
             <p>【扮演者】唯唯兒</p>
           </div>
         </div>
         <div class="student-card" data-student="學生6" data-house="holfindo">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生6頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%89%BE%E8%8E%89%E4%BA%9E.png?alt=media&token=e56cfd22-20e5-403d-bcdf-9ed40ecadb50" alt="學生6頭貼" />
           <div class="student-info">
             <h3>艾莉亞・瑟蕾絲</h3>
-            <p>【扮演者】嘎旋</p>
+            <p>【扮演者】嘎璇</p>
           </div>
         </div>
         <div class="student-card" data-student="學生7" data-house="holfindo">
@@ -257,7 +451,7 @@
           </div>
         </div>
         <div class="student-card" data-student="學生8" data-house="holfindo">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生8頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%82%AF%E5%B0%BC.png?alt=media&token=4ed90cfb-b534-4bce-9bf0-9d0f9b818718" alt="學生8頭貼" />
           <div class="student-info">
             <h3>肯尼・葛林伍夫</h3>
             <p>【扮演者】罐罐</p>
@@ -271,7 +465,7 @@
           </div>
         </div>
         <div class="student-card" data-student="學生10" data-house="holfindo">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生10頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E7%8F%82%E7%B7%B4.png?alt=media&token=6640f941-0488-454f-9427-268e22edaf72" alt="學生10頭貼" />
           <div class="student-info">
             <h3>珂練</h3>
             <p>【扮演者】歐練</p>
@@ -285,7 +479,7 @@
           </div>
         </div>
         <div class="student-card" data-student="學生12" data-house="holfindo">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生12頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E7%93%A6%E5%A8%83.png?alt=media&token=fd206fa2-d59b-4ede-8f18-d2be8d8a43e7" alt="學生12頭貼" />
           <div class="student-info">
             <h3>瓦娃・希德拉</h3>
             <p>【扮演者】襪子わつ</p>
@@ -298,7 +492,7 @@
     <div class="house-students" id="house-skmalin" style="display:none;">
       <div class="studentsSection">
         <div class="student-card" data-student="學生1" data-house="skmalin">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生1頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%96%A9%E8%8A%AE%E6%8B%89.png?alt=media&token=56288861-51dd-4e52-8d4c-496c49074a65" alt="學生1頭貼" />
           <div class="student-info">
             <h3>薩芮拉</h3>
             <p>【扮演者】老婆</p>
@@ -306,7 +500,7 @@
         </div>
         <!-- 後續同理 -->
         <div class="student-card" data-student="學生2" data-house="skmalin">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生2頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E6%B0%B4%E4%BB%99.png?alt=media&token=8415e3e8-9a76-439b-900a-c975d7b39411" alt="學生2頭貼" />
           <div class="student-info">
             <h3>水仙・穆爾西</h3>
             <p>【扮演者】水天酋長</p>
@@ -320,17 +514,17 @@
           </div>
         </div>
         <div class="student-card" data-student="學生4" data-house="skmalin">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生4頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%88%92%E6%B4%9B%E9%87%8C%E6%81%A9.png?alt=media&token=fee23725-e865-492d-b94e-2b511daa098c" alt="學生4頭貼" />
           <div class="student-info">
             <h3>舒洛里恩・灰花</h3>
             <p>【扮演者】舒狐</p>
           </div>
         </div>
         <div class="student-card" data-student="學生5" data-house="skmalin">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生5頭貼" />
+         <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生12頭貼" />
           <div class="student-info">
-            <h3>莎咪・理貢</h3>
-            <p>【扮演者】貝貝</p>
+            <h3>史嘉蕾・懷絲‧絲塔</h3>
+            <p>【扮演者】轉蛋姬</p>
           </div>
         </div>
         <div class="student-card" data-student="學生6" data-house="skmalin">
@@ -348,21 +542,21 @@
           </div>
         </div>
         <div class="student-card" data-student="學生8" data-house="skmalin">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生8頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生2頭貼" />
           <div class="student-info">
-            <h3>安柏・史塔克</h3>
-            <p>【扮演者】秋澤恭介</p>
+            <h3>尼諾・普普卡</h3>
+            <p>【扮演者】補路</p>
           </div>
         </div>
         <div class="student-card" data-student="學生9" data-house="skmalin">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生9頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生12頭貼" />
           <div class="student-info">
-            <h3>瑪莉蓮・吱吱</h3>
-            <p>【扮演者】Ume</p>
+            <h3>米拉・艾芙琳</h3>
+            <p>【扮演者】五十鈴抹茶糰子</p>
           </div>
         </div>
         <div class="student-card" data-student="學生10" data-house="skmalin">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生10頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E6%96%87%E5%98%89%E5%BE%B7.png?alt=media&token=2e9973e2-2c97-420b-800c-db1d1762d59a" alt="學生10頭貼" />
           <div class="student-info">
             <h3>文嘉德 奈洛斯</h3>
             <p>【扮演者】RVin</p>
@@ -376,7 +570,7 @@
           </div>
         </div>
         <div class="student-card" data-student="學生12" data-house="skmalin">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生12頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E6%B4%BE%E5%B4%94%E5%85%8B.png?alt=media&token=8acbd6bf-724d-436f-9864-f792238cf30d" alt="學生12頭貼" />
           <div class="student-info">
             <h3>派崔克・雷文沙德</h3>
             <p>【扮演者】流傳派</p>
@@ -411,28 +605,28 @@
           </div>
         </div>
         <div class="student-card" data-student="學生4" data-house="rowenpaf">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生4頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%89%BE%E8%95%BE%E8%AB%BE.png?alt=media&token=4c7df3ed-903a-4f8d-a9f9-1c79afe669c5" alt="學生4頭貼" />
           <div class="student-info">
             <h3>鈴・艾蕾諾</h3>
             <p>【扮演者】貓白</p>
           </div>
         </div>
         <div class="student-card" data-student="學生5" data-house="rowenpaf">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生5頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E9%A6%AC%E5%8F%AF.png?alt=media&token=ae2078f7-74c7-464e-a54d-b865c76ef31a" alt="學生5頭貼" />
           <div class="student-info">
             <h3>馬可・菠蘿</h3>
             <p>【扮演者】Peggy</p>
           </div>
         </div>
         <div class="student-card" data-student="學生6" data-house="rowenpaf">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生6頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%B3%BD%E5%8B%92%E6%96%AF.png?alt=media&token=ff0f4d4c-5270-4624-973a-7696a4f7de76" alt="學生6頭貼" />
           <div class="student-info">
             <h3>賽勒斯・格倫</h3>
             <p>【扮演者】阿莫</p>
           </div>
         </div>
         <div class="student-card" data-student="學生7" data-house="rowenpaf">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生7頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E6%B6%85%E6%B3%A2%E7%B5%B2%E5%A7%AC.png?alt=media&token=771938cf-1b21-4ca6-8458-23968498d3dd" alt="學生7頭貼" />
           <div class="student-info">
             <h3>涅比亞・涅波絲姬</h3>
             <p>【扮演者】涅波絲姬</p>
@@ -446,7 +640,7 @@
           </div>
         </div>
         <div class="student-card" data-student="學生9" data-house="rowenpaf">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生9頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%8F%B2%E5%B0%BC.png?alt=media&token=13f282e3-0458-431d-8e21-a6bd2bdafd54" alt="學生9頭貼" />
           <div class="student-info">
             <h3>菲尼・克斯</h3>
             <p>【扮演者】柳丁</p>
@@ -467,10 +661,10 @@
           </div>
         </div>
         <div class="student-card" data-student="學生12" data-house="rowenpaf">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生12頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生10頭貼" />
           <div class="student-info">
-            <h3>米拉・艾芙琳</h3>
-            <p>【扮演者】五十鈴抹茶糰子</p>
+            <h3>凱特琳・汀斯莉</h3>
+            <p>【扮演者】ㄚ布丁丁</p>
           </div>
         </div>
       </div>
@@ -480,7 +674,7 @@
     <div class="house-students" id="house-twicklow" style="display:none;">
       <div class="studentsSection">
         <div class="student-card" data-student="學生1" data-house="twicklow">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生1頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E5%A6%AE%E8%8A%99.png?alt=media&token=150a7764-b4be-4d87-8fef-278d47d74cce" alt="學生1頭貼" />
           <div class="student-info">
             <h3>妮芙・羅萊特</h3>
             <p>【扮演者】踏雪嗚哇</p>
@@ -490,12 +684,12 @@
         <div class="student-card" data-student="學生2" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生2頭貼" />
           <div class="student-info">
-            <h3>尼諾・普普卡</h3>
-            <p>【扮演者】補路</p>
+            <h3>安柏.史塔克</h3>
+            <p>【扮演者】秋澤恭介</p>
           </div>
         </div>
         <div class="student-card" data-student="學生3" data-house="twicklow">
-          <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生3頭貼" />
+          <img src="https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%B8%A2%E5%8D%A1.png?alt=media&token=41e41190-5857-480d-8417-86a3f866634e" alt="學生3頭貼" />
           <div class="student-info">
             <h3>踢卡・赫布斯特</h3>
             <p>【扮演者】踢踢</p>
@@ -532,8 +726,8 @@
         <div class="student-card" data-student="學生8" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生8頭貼" />
           <div class="student-info">
-            <h3>艾涅爾・平安</h3>
-            <p>【扮演者】鋪許</p>
+            <h3>莎咪·理貢</h3>
+            <p>【扮演者】貝貝</p>
           </div>
         </div>
         <div class="student-card" data-student="學生9" data-house="twicklow">
@@ -546,22 +740,22 @@
         <div class="student-card" data-student="學生10" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生10頭貼" />
           <div class="student-info">
-            <h3>凱特琳・汀斯莉</h3>
-            <p>【扮演者】ㄚ布丁丁</p>
+            <h3>艾涅爾．平安</h3>
+            <p>【扮演者】push</p>
           </div>
         </div>
         <div class="student-card" data-student="學生11" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生11頭貼" />
           <div class="student-info">
-            <h3>羅伊・馬斯坦古</h3>
-            <p>【扮演者】A+</p>
+            <h3>瑪莉蓮・吱吱</h3>
+            <p>【扮演者】Ume</p>
           </div>
         </div>
         <div class="student-card" data-student="學生12" data-house="twicklow">
           <img src="https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1" alt="學生12頭貼" />
           <div class="student-info">
-            <h3>史嘉蕾・懷絲‧絲塔</h3>
-            <p>【扮演者】轉蛋姬</p>
+            <h3>羅伊・馬斯坦古</h3>
+            <p>【扮演者】A+</p>
           </div>
         </div>
       </div>
