@@ -1621,3 +1621,27 @@ nav{ all:unset; }
 .news-item img:hover {
   transform: scale(1.05);
 }
+
+#newspaperNav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 8px 0 15px;
+  font-size: 0.8em; 
+}
+
+#newspaperNav a {
+  cursor: pointer;
+  padding: 3px 5px; 
+  border-radius: 13px;
+  background: rgba(246, 219, 135, .15);
+  color: #f6db87;
+  text-decoration: none;
+  transition: background .3s;
+}
+
+#newspaperNav a:hover,
+#newspaperNav a.active {
+  background: #f6db87;
+  color: #000;
+}
