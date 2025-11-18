@@ -643,7 +643,7 @@ const divisionData = {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
       text: `
 【角色】艾涅爾．平安
-【性別】女
+【性別】男
 【年齡】18歲
 【種族】游牧族群──「風隱者」 
 【個性】喜愛刺激自由冒險，喜歡跟有相同目標的人相處
@@ -669,7 +669,7 @@ const divisionData = {
 【角色】羅伊・馬斯坦古
 【性別】男
 【年齡】18歲
-【種族】人類
+【種族】半精靈
 【個性】喜歡鑽研、討厭笨蛋。勇敢、但不魯莽。外向、但是嘴很賤。
 【簡介】侍奉著火焰的精靈一族，偷偷與人類女子生下的半精靈。從小生活在人類世界的他不知道自己的身分，只知道自己很喜歡火焰的炙熱與光芒。
 `,
@@ -2174,3 +2174,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
