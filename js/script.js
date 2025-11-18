@@ -428,8 +428,8 @@ const divisionData = {
 【性別】女
 【年齡】18歲
 【種族】精靈 
-【個性】膽小、害羞但極度溫柔的孩子。
-【簡介】父母為了保護森林與孩子，燃起光之魔法奮戰至最後一刻。他想成為與父母一樣厲害的魔法師；卻也害怕 害怕陌生的世界、害怕失敗、害怕孤單。
+【個性】膽小、害羞，受到驚嚇也會盡量保持溫柔
+【簡介】花之森林長大的精靈。目睹了父母為守護而犧牲，使她變得膽小怕黑；在舅舅施下的「勇氣之花」的魔法陪伴下，她帶著小小的勇氣踏上旅程。
 `,
       twitch: 'https://www.twitch.tv/nekoa_o'
     },
@@ -619,7 +619,7 @@ const divisionData = {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
       text: `
 【角色】艾涅爾．平安
-【性別】女
+【性別】男
 【年齡】18歲
 【種族】游牧族群──「風隱者」 
 【個性】喜愛刺激自由冒險，喜歡跟有相同目標的人相處
@@ -2150,3 +2150,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
