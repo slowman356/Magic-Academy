@@ -601,7 +601,7 @@ const divisionData = {
 【個性】樂觀活潑又調皮，內心心思細膩也很善良，樂於助人。
 【簡介】從小被父母捧在手心長大，有些被寵壞的調皮，但是內心還是善良的
 `,
-      twitch: ''
+      twitch: 'https://www.twitch.tv/yidhra0727'
     },
     '學生7': {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
@@ -2174,5 +2174,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
 
 
