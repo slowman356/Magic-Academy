@@ -163,7 +163,7 @@ const divisionData = {
 【個性】看起來柔和可親，但內心有著不容忽視的執著與勇氣
 【簡介】十年前，星歌村在魔族的突襲中被摧毀。艾莉亞是少數倖存者之一，被奧德倫的學者救出。
 `,
-      twitch: ''
+      twitch: 'https://www.twitch.tv/shen_0828'
     },
     '學生7': {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
@@ -249,7 +249,7 @@ const divisionData = {
 【個性】開朗、直率；喜歡打破尷尬氣氛，也喜歡挑戰權威
 【簡介】誕生為半血魔族，混血身分在魔族與人類之間皆被視為「不潔的存在」，她自幼飽受排斥與歧視。
 `,
-      twitch: 'hhttps://www.twitch.tv/s73225200'
+      twitch: 'https://www.twitch.tv/s73225200'
     },
     '學生2': {
       img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E6%B0%B4%E4%BB%99.png?alt=media&token=8415e3e8-9a76-439b-900a-c975d7b39411',
@@ -395,7 +395,7 @@ const divisionData = {
 【個性】溫柔、善解人意、容易讓人感到放鬆，偶爾天然呆犯蠢。
 【簡介】天然呆，經常忘東忘西，偶爾把魔法草藥當成糖果吃
 `,
-      twitch: 'https://www.twitch.tv/isuzumaccha'
+      twitch: 'https://www.twitch.tv/misuzu0x0'
     },
     '學生2': {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
@@ -428,8 +428,8 @@ const divisionData = {
 【性別】女
 【年齡】18歲
 【種族】精靈 
-【個性】膽小、害羞但極度溫柔的孩子。
-【簡介】父母為了保護森林與孩子，燃起光之魔法奮戰至最後一刻。他想成為與父母一樣厲害的魔法師；卻也害怕 害怕陌生的世界、害怕失敗、害怕孤單。
+【個性】膽小怕黑，慌張時容易講話結結結巴
+【簡介】出生於花之森的精靈少女。目睹父母為守護家園犧牲，使原本陽光的她變得膽小怕黑；在舅舅施下的「勇氣之花」魔法陪伴下，她帶著小小的祝福踏上旅程。
 `,
       twitch: 'https://www.twitch.tv/nekoa_o'
     },
@@ -2174,4 +2174,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
 
