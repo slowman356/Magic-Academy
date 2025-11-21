@@ -467,7 +467,7 @@ const divisionData = {
 【個性】喜歡和平、不喜歡戰爭與殺戮，溫柔、開朗、對世界充滿好奇心。
 【簡介】對「刀與劍」有強烈的排斥感、連碰都不願意碰，沒有人知道為什麼、她也從來不跟其他人說
 `,
-      twitch: ''
+      twitch: 'https://www.twitch.tv/neboskey'
     },
     '學生8': {
       img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E6%A3%AE%E8%96%87%E7%88%BE.png?alt=media&token=4f0c35db-9e3b-473a-b813-f3218b4aafb5',
@@ -553,7 +553,7 @@ const divisionData = {
 【個性】好奇貪婪，活潑幽默，重視情誼
 【簡介】貪婪於知識與力量的他，總想突破界限、挑戰禁忌。雖常闖禍惹事，卻以機智與幽默化解危機。
 `,
-      twitch: 'https://www.twitch.tv/blue_kao'
+      twitch: 'https://www.twitch.tv/akizkke0328'
     },
     '學生3': {
       img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E8%B8%A2%E5%8D%A1.png?alt=media&token=41e41190-5857-480d-8417-86a3f866634e',
@@ -2174,6 +2174,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
 
 
 
