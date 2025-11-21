@@ -266,7 +266,7 @@ const divisionData = {
     '學生3': {
       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
       text: `
-【角色】多比
+【角色】哥不正
 【性別】男
 【年齡】18歲 
 【種族】哥布林
@@ -2174,6 +2174,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
 
 
 
