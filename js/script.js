@@ -2085,7 +2085,24 @@ navLinks.forEach(link => {
 });
 
 
-const MAX_HOUSE_SCORE = 1000; // 你原本定義多少就用多少
+const MAX_HOUSE_SCORE = 1000; // 
+
+function refreshAllProgressBarsFromDataset() {
+  const houseEls = document.querySelectorAll('.house-score');
+
+  houseEls.forEach(houseEl => {
+    const score = parseInt(houseEl.dataset.score) || 0;
+    const bar = houseEl.querySelector('.score-bar');
+    const valueSpan = houseEl.querySelector('.score-value');
+
+    if (!bar) return;
+
+    const percentage = Math.min(score / MAX_HOUSE_SCORE * 100, 100);
+    bar.style.height = percentage + '%';
+
+    if (valueSpan) valueSpan.textContent = score;
+  });
+}
 
 function setHouseScore(houseKey, newScore) {
   const houseEl = document.querySelector(`.house-score[data-house="${houseKey}"]`);
@@ -2099,13 +2116,11 @@ function setHouseScore(houseKey, newScore) {
 document.addEventListener('DOMContentLoaded', function () {
   const sections = document.querySelectorAll('.section');
 
-  
   function showSection(targetId) {
     sections.forEach(sec => {
       sec.style.display = (sec.id === targetId) ? 'block' : 'none';
     });
 
-    
     if (targetId === 'scoreboard') {
       refreshAllProgressBarsFromDataset();
     }
@@ -2113,12 +2128,9 @@ document.addEventListener('DOMContentLoaded', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  
   sections.forEach(sec => sec.style.display = 'none');
-  
   showSection('home');
 
-  
   document.querySelectorAll('[data-section]').forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
@@ -2128,7 +2140,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  
   const innerScoreLinks = document.querySelectorAll('.score-link');
   innerScoreLinks.forEach(link => {
     link.addEventListener('click', function (e) {
@@ -2137,6 +2148,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
 document.addEventListener("DOMContentLoaded", () => {
 
 
@@ -2174,6 +2186,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
 
 
 
