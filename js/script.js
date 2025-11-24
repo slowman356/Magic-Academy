@@ -190,7 +190,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/can1021'
     },
     '學生9': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E6%B3%A2%E6%B3%A2%E9%AD%AF.png?alt=media&token=e4914dee-ba8b-498a-9cc0-6afedb1f4b91',
       text: `
 【角色】波波魯・坡伊
 【性別】女
@@ -264,7 +264,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/waterday0930'
     },
     '學生3': {
-      img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+      img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E5%93%A5%E4%B8%8D%E6%AD%A3.png?alt=media&token=86cc316b-3ec6-4f33-9514-bd472bc62924',
       text: `
 【角色】哥不正
 【性別】男
@@ -518,7 +518,7 @@ const divisionData = {
       twitch: 'https://www.twitch.tv/yaya6315341'
     },
     '學生12': {
-       img: 'https://firebasestorage.googleapis.com/v0/b/magic-academy-8374a.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2FMG%20M.png?alt=media&token=105f2c02-64b9-4f5c-8d32-3212b39c7bb1',
+       img: 'https://firebasestorage.googleapis.com/v0/b/mg2222-95b15.firebasestorage.app/o/%E5%AD%B8%E7%94%9F%2F%E5%87%B1%E7%89%B9%E7%90%B3.png?alt=media&token=79a8f689-c9c8-44f1-91a3-a3c7cc53d584',
       text: `
 【角色】凱特琳・汀斯莉
 【性別】女
@@ -2186,6 +2186,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
 
 
 
